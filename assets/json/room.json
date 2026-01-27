@@ -1,0 +1,5444 @@
+[
+  {
+    "room_id": "1112R001-01",
+    "room_name": "PICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-02",
+    "room_name": "ICCU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-03",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-04",
+    "room_name": "ICU",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-05",
+    "room_name": "NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-06",
+    "room_name": "Rajawali Atas",
+    "room_class": "2",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-07",
+    "room_name": "Rajawali Bawah",
+    "room_class": "VIP",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-08",
+    "room_name": "Flamboyan",
+    "room_class": "1",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-09",
+    "room_name": "Aster",
+    "room_class": "1",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-10",
+    "room_name": "Wijaya Kusuma",
+    "room_class": "2",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-11",
+    "room_name": "Bougenvil",
+    "room_class": "3",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-12",
+    "room_name": "Kenanga",
+    "room_class": "3",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-13",
+    "room_name": "Cathelia",
+    "room_class": "1",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-14",
+    "room_name": "Cathelia",
+    "room_class": "2",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-15",
+    "room_name": "Cathelia",
+    "room_class": "3",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-16",
+    "room_name": "Cathelia",
+    "room_class": "Isolasi Kelas 3",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-17",
+    "room_name": "Melati",
+    "room_class": "3",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-18",
+    "room_name": "Melati",
+    "room_class": "Isolasi Kelas 3",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-19",
+    "room_name": "Anggrek",
+    "room_class": "2",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-20",
+    "room_name": "Anggrek",
+    "room_class": "3",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-21",
+    "room_name": "Dahlia",
+    "room_class": "1",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-22",
+    "room_name": "Dahlia",
+    "room_class": "2",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-23",
+    "room_name": "Dahlia",
+    "room_class": "3",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-24",
+    "room_name": "Dahlia",
+    "room_class": "Isolasi Kelas 3",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-25",
+    "room_name": "Amarilis",
+    "room_class": "3",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-26",
+    "room_name": "Amarilis",
+    "room_class": "Isolasi Kelas 3",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-27",
+    "room_name": "Mawar Atas",
+    "room_class": "1",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-28",
+    "room_name": "Mawar Atas",
+    "room_class": "2",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-29",
+    "room_name": "Mawar Bawah",
+    "room_class": "1",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-30",
+    "room_name": "Mawar Bawah",
+    "room_class": "2",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "1112R001-31",
+    "room_name": "Mawar Bawah",
+    "room_class": "3",
+    "hospital_id": "1112R001"
+  },
+  {
+    "room_id": "0141R004-01",
+    "room_name": "Melati",
+    "room_class": "I",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-02",
+    "room_name": "Melati",
+    "room_class": "II",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-03",
+    "room_name": "Melati",
+    "room_class": "III",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-04",
+    "room_name": "Melati",
+    "room_class": "Isolasi Tanpa Tekanan (Non Kelas)",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-05",
+    "room_name": "HCU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-06",
+    "room_name": "Alamanda",
+    "room_class": "VIP",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-07",
+    "room_name": "Alamanda",
+    "room_class": "I",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-08",
+    "room_name": "Alamanda",
+    "room_class": "II",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-09",
+    "room_name": "Alamanda",
+    "room_class": "III",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-10",
+    "room_name": "Alamanda",
+    "room_class": "Isolasi Tekanan Negatif (Non Kelas)",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-11",
+    "room_name": "Mawar",
+    "room_class": "VVIP",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-12",
+    "room_name": "Mawar",
+    "room_class": "VIP",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-13",
+    "room_name": "Mawar",
+    "room_class": "I",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-14",
+    "room_name": "Mawar",
+    "room_class": "II",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-15",
+    "room_name": "Mawar",
+    "room_class": "II",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-16",
+    "room_name": "Mawar",
+    "room_class": "III",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-17",
+    "room_name": "VK",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-18",
+    "room_name": "VK",
+    "room_class": "Isolasi Tekanan Negatif (Non Kelas)",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-19",
+    "room_name": "NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-20",
+    "room_name": "Perinatologi",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-21",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-22",
+    "room_name": "ICU",
+    "room_class": "Isolasi Tekanan Negatif (Non Kelas)",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "0141R004-23",
+    "room_name": "PICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R004"
+  },
+  {
+    "room_id": "1112R003-01",
+    "room_name": "Anggrek",
+    "room_class": "2",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-02",
+    "room_name": "Aster",
+    "room_class": "1",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-03",
+    "room_name": "Aster",
+    "room_class": "2",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-04",
+    "room_name": "Aster",
+    "room_class": "3",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-05",
+    "room_name": "Aster",
+    "room_class": "2 Isolasi",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-06",
+    "room_name": "Bougenville",
+    "room_class": "1",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-07",
+    "room_name": "Bougenville",
+    "room_class": "2",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-08",
+    "room_name": "Bougenville",
+    "room_class": "3",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-09",
+    "room_name": "Bougenville",
+    "room_class": "2 Isolasi",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-10",
+    "room_name": "Dahlia",
+    "room_class": "3",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-11",
+    "room_name": "Dahlia",
+    "room_class": "2 Isolasi",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-12",
+    "room_name": "Edelweis",
+    "room_class": "2",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-13",
+    "room_name": "Edelweis",
+    "room_class": "3",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-14",
+    "room_name": "Edelweis",
+    "room_class": "2 Isolasi",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-15",
+    "room_name": "Flamboyan",
+    "room_class": "1",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-16",
+    "room_name": "Flamboyan",
+    "room_class": "2 Isolasi",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-17",
+    "room_name": "HCU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-18",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-19",
+    "room_name": "ICU",
+    "room_class": "2 Isolasi (Non Kelas)",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-20",
+    "room_name": "PICU",
+    "room_class": "3 Non Kelas",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-21",
+    "room_name": "Mawar",
+    "room_class": "1",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-22",
+    "room_name": "Mawar",
+    "room_class": "2",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-23",
+    "room_name": "Mawar",
+    "room_class": "3",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-24",
+    "room_name": "Mawar",
+    "room_class": "1 Isolasi",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-25",
+    "room_name": "Melati",
+    "room_class": "3",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-26",
+    "room_name": "Melati",
+    "room_class": "2 Isolasi",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-27",
+    "room_name": "Soka",
+    "room_class": "Non Kelas",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-28",
+    "room_name": "NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "1112R003-29",
+    "room_name": "Wijayakusuma",
+    "room_class": "VIP",
+    "hospital_id": "1112R003"
+  },
+  {
+    "room_id": "0141R007-01",
+    "room_name": "Garuda",
+    "room_class": "1",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-02",
+    "room_name": "Garuda",
+    "room_class": "2",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-03",
+    "room_name": "Garuda",
+    "room_class": "3",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-04",
+    "room_name": "Garuda",
+    "room_class": "VIP",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-05",
+    "room_name": "Garuda",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-06",
+    "room_name": "Ranap Atas",
+    "room_class": "1",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-07",
+    "room_name": "Ranap Atas",
+    "room_class": "2",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-08",
+    "room_name": "Ranap Atas",
+    "room_class": "3",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-09",
+    "room_name": "Ranap Atas",
+    "room_class": "VIP",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-10",
+    "room_name": "Ranap Atas",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-11",
+    "room_name": "Ranap Bawah",
+    "room_class": "1",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-12",
+    "room_name": "Ranap Bawah",
+    "room_class": "2",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-13",
+    "room_name": "Ranap Bawah",
+    "room_class": "3",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-14",
+    "room_name": "Ranap Bawah",
+    "room_class": "VIP",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-15",
+    "room_name": "Ranap Bawah",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-16",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-17",
+    "room_name": "Perina",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-18",
+    "room_name": "Perina",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-19",
+    "room_name": "PICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R007-20",
+    "room_name": "NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R007"
+  },
+  {
+    "room_id": "0141R014-01",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-02",
+    "room_name": "ICU",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-03",
+    "room_name": "PICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-04",
+    "room_name": "Perina",
+    "room_class": "3",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-05",
+    "room_name": "NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-06",
+    "room_name": "Edelweis",
+    "room_class": "1",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-07",
+    "room_name": "Edelweis",
+    "room_class": "2",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-08",
+    "room_name": "Edelweis",
+    "room_class": "3",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-09",
+    "room_name": "Edelweis",
+    "room_class": "Isolasi",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-10",
+    "room_name": "Bougenvile",
+    "room_class": "2",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-11",
+    "room_name": "Bougenvile",
+    "room_class": "3",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-12",
+    "room_name": "Bougenvile",
+    "room_class": "Isolasi",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-13",
+    "room_name": "Flamboyan",
+    "room_class": "VVIP",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-14",
+    "room_name": "Flamboyan",
+    "room_class": "VIP",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-15",
+    "room_name": "Flamboyan",
+    "room_class": "1",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-16",
+    "room_name": "Flamboyan",
+    "room_class": "3",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-17",
+    "room_name": "Anggrek",
+    "room_class": "2",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R014-18",
+    "room_name": "Anggrek",
+    "room_class": "3",
+    "hospital_id": "0141R014"
+  },
+  {
+    "room_id": "0141R018-01",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R018"
+  },
+  {
+    "room_id": "0141R018-02",
+    "room_name": "Crysant A",
+    "room_class": "1",
+    "hospital_id": "0141R018"
+  },
+  {
+    "room_id": "0141R018-03",
+    "room_name": "Crysant A",
+    "room_class": "VIP",
+    "hospital_id": "0141R018"
+  },
+  {
+    "room_id": "0141R018-04",
+    "room_name": "Crysant B",
+    "room_class": "2",
+    "hospital_id": "0141R018"
+  },
+  {
+    "room_id": "0141R018-05",
+    "room_name": "Crysant B",
+    "room_class": "3",
+    "hospital_id": "0141R018"
+  },
+  {
+    "room_id": "0141R018-06",
+    "room_name": "Aglonema",
+    "room_class": "1",
+    "hospital_id": "0141R018"
+  },
+  {
+    "room_id": "0141R018-07",
+    "room_name": "Aglonema",
+    "room_class": "2",
+    "hospital_id": "0141R018"
+  },
+  {
+    "room_id": "0141R018-08",
+    "room_name": "Aglonema",
+    "room_class": "3",
+    "hospital_id": "0141R018"
+  },
+  {
+    "room_id": "0141R018-09",
+    "room_name": "Aglonema",
+    "room_class": "Isolasi Kelas 3",
+    "hospital_id": "0141R018"
+  },
+  {
+    "room_id": "0141R016-01",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R016"
+  },
+  {
+    "room_id": "0141R016-02",
+    "room_name": "PICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R016"
+  },
+  {
+    "room_id": "0141R016-03",
+    "room_name": "NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R016"
+  },
+  {
+    "room_id": "0141R016-04",
+    "room_name": "Perina",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R016"
+  },
+  {
+    "room_id": "0141R016-05",
+    "room_name": "Sadewa",
+    "room_class": "1",
+    "hospital_id": "0141R016"
+  },
+  {
+    "room_id": "0141R016-06",
+    "room_name": "Sadewa",
+    "room_class": "2",
+    "hospital_id": "0141R016"
+  },
+  {
+    "room_id": "0141R016-07",
+    "room_name": "Sadewa",
+    "room_class": "3",
+    "hospital_id": "0141R016"
+  },
+  {
+    "room_id": "0141R016-08",
+    "room_name": "Sadewa",
+    "room_class": "VVIP",
+    "hospital_id": "0141R016"
+  },
+  {
+    "room_id": "0141R016-09",
+    "room_name": "Sadewa",
+    "room_class": "VIP",
+    "hospital_id": "0141R016"
+  },
+  {
+    "room_id": "0141R016-10",
+    "room_name": "Sadewa",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R016"
+  },
+  {
+    "room_id": "0141R016-11",
+    "room_name": "Yudistira",
+    "room_class": "2",
+    "hospital_id": "0141R016"
+  },
+  {
+    "room_id": "0141R016-12",
+    "room_name": "Yudistira",
+    "room_class": "3",
+    "hospital_id": "0141R016"
+  },
+  {
+    "room_id": "0141R016-13",
+    "room_name": "Nakula",
+    "room_class": "3",
+    "hospital_id": "0141R016"
+  },
+  {
+    "room_id": "0141R016-14",
+    "room_name": "Nakula",
+    "room_class": "Isolasi Anaerob",
+    "hospital_id": "0141R016"
+  },
+  {
+    "room_id": "0141R016-15",
+    "room_name": "Nakula",
+    "room_class": "Isolasi Aerob",
+    "hospital_id": "0141R016"
+  },
+  {
+    "room_id": "0141R016-16",
+    "room_name": "Nakula",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0141R016"
+  },
+  {
+    "room_id": "0141R015-01",
+    "room_name": "Arimbi",
+    "room_class": "3",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-02",
+    "room_name": "Shinta",
+    "room_class": "3",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-03",
+    "room_name": "Sembadra",
+    "room_class": "3",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-04",
+    "room_name": "Yudhistira",
+    "room_class": "3",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-05",
+    "room_name": "Bima",
+    "room_class": "2",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-06",
+    "room_name": "Sakuntala",
+    "room_class": "1",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-07",
+    "room_name": "VIP",
+    "room_class": "VIP",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-08",
+    "room_name": "Isolasi",
+    "room_class": "1",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-09",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-10",
+    "room_name": "Isolasi ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-11",
+    "room_name": "PICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-12",
+    "room_name": "NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-13",
+    "room_name": "Shinta Obsgyn",
+    "room_class": "3",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-14",
+    "room_name": "Bima Obsgyn",
+    "room_class": "2",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-15",
+    "room_name": "Sakuntala Obsgyn",
+    "room_class": "1",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-16",
+    "room_name": "VIP 1",
+    "room_class": "VIP",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-17",
+    "room_name": "Arimbi Anak",
+    "room_class": "3",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-18",
+    "room_name": "Bima Anak",
+    "room_class": "2",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-19",
+    "room_name": "Sakuntala Anak",
+    "room_class": "1",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R015-20",
+    "room_name": "VIP 2",
+    "room_class": "VIP",
+    "hospital_id": "0141R015"
+  },
+  {
+    "room_id": "0141R017-01",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R017"
+  },
+  {
+    "room_id": "0141R017-02",
+    "room_name": "ICU Isolasi",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R017"
+  },
+  {
+    "room_id": "0141R017-03",
+    "room_name": "PICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R017"
+  },
+  {
+    "room_id": "0141R017-04",
+    "room_name": "Gardenia",
+    "room_class": "VVIP",
+    "hospital_id": "0141R017"
+  },
+  {
+    "room_id": "0141R017-05",
+    "room_name": "Mawar",
+    "room_class": "VIP",
+    "hospital_id": "0141R017"
+  },
+  {
+    "room_id": "0141R017-06",
+    "room_name": "Anyelir",
+    "room_class": "1",
+    "hospital_id": "0141R017"
+  },
+  {
+    "room_id": "0141R017-07",
+    "room_name": "Dahlia",
+    "room_class": "2",
+    "hospital_id": "0141R017"
+  },
+  {
+    "room_id": "0141R017-08",
+    "room_name": "Isolasi",
+    "room_class": "1",
+    "hospital_id": "0141R017"
+  },
+  {
+    "room_id": "0141R017-09",
+    "room_name": "Isolasi",
+    "room_class": "2",
+    "hospital_id": "0141R017"
+  },
+  {
+    "room_id": "0141R017-10",
+    "room_name": "Krisant",
+    "room_class": "3",
+    "hospital_id": "0141R017"
+  },
+  {
+    "room_id": "0141R017-11",
+    "room_name": "Isolasi",
+    "room_class": "3 Isolasi",
+    "hospital_id": "0141R017"
+  },
+  {
+    "room_id": "0141R017-12",
+    "room_name": "Camelia",
+    "room_class": "VIP",
+    "hospital_id": "0141R017"
+  },
+  {
+    "room_id": "0141R017-13",
+    "room_name": "Anggrek",
+    "room_class": "1",
+    "hospital_id": "0141R017"
+  },
+  {
+    "room_id": "0141R017-14",
+    "room_name": "Seruni",
+    "room_class": "2",
+    "hospital_id": "0141R017"
+  },
+  {
+    "room_id": "0141R017-15",
+    "room_name": "Magnolia",
+    "room_class": "3",
+    "hospital_id": "0141R017"
+  },
+  {
+    "room_id": "0141R017-16",
+    "room_name": "Perina",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R017"
+  },
+  {
+    "room_id": "1112R002-01",
+    "room_name": "Arafah 4",
+    "room_class": "Iso",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-02",
+    "room_name": "Arafah 4",
+    "room_class": "VIP",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-03",
+    "room_name": "Arafah 3",
+    "room_class": "Iso",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-04",
+    "room_name": "Arafah 3",
+    "room_class": "Kelas 3",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-05",
+    "room_name": "Arafah 3",
+    "room_class": "Kelas 2",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-06",
+    "room_name": "Arafah 3",
+    "room_class": "Kelas 1",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-07",
+    "room_name": "Arafah 3",
+    "room_class": "VIP",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-08",
+    "room_name": "Arafah 2",
+    "room_class": "Iso",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-09",
+    "room_name": "Arafah 2",
+    "room_class": "Kelas 3",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-10",
+    "room_name": "Arafah 2",
+    "room_class": "Kelas 2",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-11",
+    "room_name": "Arafah 2",
+    "room_class": "Kelas 1",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-12",
+    "room_name": "Al Araaf",
+    "room_class": "Iso",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-13",
+    "room_name": "Al Araaf",
+    "room_class": "Kelas 3",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-14",
+    "room_name": "Al Kautsar",
+    "room_class": "Iso",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-15",
+    "room_name": "Al Kautsar",
+    "room_class": "Kelas 3",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-16",
+    "room_name": "Perinat",
+    "room_class": "Non Kelas",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-17",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-18",
+    "room_name": "PICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1112R002-19",
+    "room_name": "NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1112R002"
+  },
+  {
+    "room_id": "1111R001-01",
+    "room_name": "Soeparjo Roestam",
+    "room_class": "1",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-02",
+    "room_name": "Soeparjo Roestam",
+    "room_class": "VIP",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-03",
+    "room_name": "Asoka",
+    "room_class": "1",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-04",
+    "room_name": "Asoka",
+    "room_class": "2",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-05",
+    "room_name": "Asoka",
+    "room_class": "3",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-06",
+    "room_name": "Dahlia",
+    "room_class": "1",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-07",
+    "room_name": "Dahlia",
+    "room_class": "2",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-08",
+    "room_name": "Dahlia",
+    "room_class": "3",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-09",
+    "room_name": "Mawar",
+    "room_class": "3",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-10",
+    "room_name": "Aster",
+    "room_class": "1",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-11",
+    "room_name": "Aster",
+    "room_class": "2",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-12",
+    "room_name": "Aster",
+    "room_class": "3",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-13",
+    "room_name": "Cendana",
+    "room_class": "1",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-14",
+    "room_name": "Cendana",
+    "room_class": "2",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-15",
+    "room_name": "Cendana",
+    "room_class": "3",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-16",
+    "room_name": "Cendana",
+    "room_class": "Isolasi MDR",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-17",
+    "room_name": "Anggrek",
+    "room_class": "1",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-18",
+    "room_name": "Anggrek",
+    "room_class": "2",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-19",
+    "room_name": "Anggrek",
+    "room_class": "3",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-20",
+    "room_name": "Cempaka",
+    "room_class": "1",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-21",
+    "room_name": "Cempaka",
+    "room_class": "2",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-22",
+    "room_name": "Cempaka",
+    "room_class": "3",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-23",
+    "room_name": "Kenanga",
+    "room_class": "1",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-24",
+    "room_name": "Kenanga",
+    "room_class": "2",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-25",
+    "room_name": "Kenanga",
+    "room_class": "3",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-26",
+    "room_name": "Seruni",
+    "room_class": "1",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-27",
+    "room_name": "Seruni",
+    "room_class": "2",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-28",
+    "room_name": "Seruni",
+    "room_class": "3",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-29",
+    "room_name": "Teratai",
+    "room_class": "1",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-30",
+    "room_name": "Teratai",
+    "room_class": "2",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-31",
+    "room_name": "Teratai",
+    "room_class": "3",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-32",
+    "room_name": "Wijaya Kusuma",
+    "room_class": "1",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-33",
+    "room_name": "Wijaya Kusuma",
+    "room_class": "2",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-34",
+    "room_name": "Wijaya Kusuma",
+    "room_class": "3",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-35",
+    "room_name": "Wijaya Kusuma",
+    "room_class": "VIP",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-36",
+    "room_name": "Bugenville",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-37",
+    "room_name": "Ruang Alamanda",
+    "room_class": "1",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-38",
+    "room_name": "Ruang Alamanda",
+    "room_class": "2",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-39",
+    "room_name": "Ruang Alamanda",
+    "room_class": "3",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-40",
+    "room_name": "Ruang Amarilis",
+    "room_class": "1",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-41",
+    "room_name": "Ruang Amarilis",
+    "room_class": "2",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-42",
+    "room_name": "Ruang Amarilis",
+    "room_class": "3",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-43",
+    "room_name": "Ruang Anyelir",
+    "room_class": "1",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-44",
+    "room_name": "Ruang Anyelir",
+    "room_class": "2",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-45",
+    "room_name": "Ruang Anyelir",
+    "room_class": "3",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-46",
+    "room_name": "Ruang Adenium",
+    "room_class": "VIP",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-47",
+    "room_name": "Flamboyan",
+    "room_class": "1",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-48",
+    "room_name": "Flamboyan",
+    "room_class": "2",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-49",
+    "room_name": "Flamboyan",
+    "room_class": "3",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-50",
+    "room_name": "Melati NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-51",
+    "room_name": "Melati HCU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-52",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-53",
+    "room_name": "PICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-54",
+    "room_name": "HCU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-55",
+    "room_name": "ICU Abiyasa",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-56",
+    "room_name": "ICCU Abiyasa",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R001-57",
+    "room_name": "HCU Abiyasa",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R001"
+  },
+  {
+    "room_id": "1111R003-01",
+    "room_name": "Cempaka",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-02",
+    "room_name": "Cempaka",
+    "room_class": "3",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-03",
+    "room_name": "Dahlia",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-04",
+    "room_name": "Dahlia",
+    "room_class": "2",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-05",
+    "room_name": "Dahlia",
+    "room_class": "3",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-06",
+    "room_name": "ICU 2",
+    "room_class": "Non Kelas (Venti)",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-07",
+    "room_name": "HCU",
+    "room_class": "Non Kelas (Non Venti)",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-08",
+    "room_name": "Edelweis",
+    "room_class": "2",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-09",
+    "room_name": "Edelweis",
+    "room_class": "3",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-10",
+    "room_name": "Edelweis",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-11",
+    "room_name": "Flamboyan",
+    "room_class": "1",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-12",
+    "room_name": "Flamboyan",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-13",
+    "room_name": "Gardena",
+    "room_class": "1",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-14",
+    "room_name": "Kanthil",
+    "room_class": "2",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-15",
+    "room_name": "Kanthil",
+    "room_class": "3",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-16",
+    "room_name": "Kanthil",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-17",
+    "room_name": "Melati",
+    "room_class": "3",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-18",
+    "room_name": "Teratai",
+    "room_class": "3",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-19",
+    "room_name": "Unit Stroke",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-20",
+    "room_name": "ICU 1",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-21",
+    "room_name": "Wijayakusuma",
+    "room_class": "2",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-22",
+    "room_name": "Wijayakusuma",
+    "room_class": "VIP",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-23",
+    "room_name": "Seruni",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-24",
+    "room_name": "Seruni",
+    "room_class": "2",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-25",
+    "room_name": "Seruni",
+    "room_class": "3",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-26",
+    "room_name": "Sadewa",
+    "room_class": "3",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-27",
+    "room_name": "Sadewa",
+    "room_class": "2",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-28",
+    "room_name": "Bima",
+    "room_class": "3",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-29",
+    "room_name": "Bima",
+    "room_class": "2",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-31",
+    "room_name": "Nakula",
+    "room_class": "3",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-30",
+    "room_name": "Arjuna",
+    "room_class": "1",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-32",
+    "room_name": "Arjuna",
+    "room_class": "2",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-33",
+    "room_name": "Arjuna",
+    "room_class": "3",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-34",
+    "room_name": "Arjuna",
+    "room_class": "Non Kelas (HCU)",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-35",
+    "room_name": "Perinatologi",
+    "room_class": "1",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-36",
+    "room_name": "Perinatologi",
+    "room_class": "2",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-37",
+    "room_name": "Perinatologi",
+    "room_class": "3",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-38",
+    "room_name": "Perinatologi",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-39",
+    "room_name": "Perinatologi",
+    "room_class": "Non Kelas (HCU)",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-40",
+    "room_name": "Perinatologi",
+    "room_class": "Non Kelas (NICU)",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-41",
+    "room_name": "Kamar Bersalin (VK)",
+    "room_class": "1",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-42",
+    "room_name": "Kamar Bersalin (VK)",
+    "room_class": "2",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-43",
+    "room_name": "Kamar Bersalin (VK)",
+    "room_class": "3",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-44",
+    "room_name": "Kamar Bersalin (VK)",
+    "room_class": "2 ODS",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-45",
+    "room_name": "Permata Hati",
+    "room_class": "2",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-46",
+    "room_name": "Permata Hati",
+    "room_class": "3",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-47",
+    "room_name": "Permata Hati",
+    "room_class": "2 ODS",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-48",
+    "room_name": "PICU Anak",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-49",
+    "room_name": "PICU Anak",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-50",
+    "room_name": "HCU Anak",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-51",
+    "room_name": "HCU Anak",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-52",
+    "room_name": "ICCU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R003-53",
+    "room_name": "Anggrek",
+    "room_class": "3",
+    "hospital_id": "1111R003"
+  },
+  {
+    "room_id": "1111R010-01",
+    "room_name": "Cendrawasih Atas",
+    "room_class": "1",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-02",
+    "room_name": "Cendrawasih Atas",
+    "room_class": "2",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-03",
+    "room_name": "Cendrawasih Atas",
+    "room_class": "3",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-04",
+    "room_name": "Cendrawasih Bawah",
+    "room_class": "1",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-05",
+    "room_name": "Cendrawasih Bawah",
+    "room_class": "2",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-06",
+    "room_name": "Cendrawasih Bawah",
+    "room_class": "3",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-07",
+    "room_name": "Kepodang Atas",
+    "room_class": "1",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-08",
+    "room_name": "Kepodang Atas",
+    "room_class": "2",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-09",
+    "room_name": "Kepodang Atas",
+    "room_class": "3",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-10",
+    "room_name": "Kepodang Atas",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-11",
+    "room_name": "Kepodang Bawah",
+    "room_class": "3",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-12",
+    "room_name": "Kepodang Bawah",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-13",
+    "room_name": "Kenari Atas",
+    "room_class": "1",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-14",
+    "room_name": "Kenari Atas",
+    "room_class": "3",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-15",
+    "room_name": "Kenari Bawah",
+    "room_class": "3",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-16",
+    "room_name": "Kenari Bawah",
+    "room_class": "1",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-17",
+    "room_name": "Camar Bawah",
+    "room_class": "3",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-18",
+    "room_name": "Nuri",
+    "room_class": "1",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-19",
+    "room_name": "Nuri",
+    "room_class": "2",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-20",
+    "room_name": "Nuri",
+    "room_class": "3",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-21",
+    "room_name": "Nuri",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-22",
+    "room_name": "ICU Terbuka",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-23",
+    "room_name": "ICU Tertutup",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-24",
+    "room_name": "PICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-25",
+    "room_name": "Perinatology",
+    "room_class": "Perinatologi",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-26",
+    "room_name": "Perinatology (NICU)",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "1111R010-27",
+    "room_name": "Perinatology",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R010"
+  },
+  {
+    "room_id": "0142R028-01",
+    "room_name": "Meranti",
+    "room_class": "VIP",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-02",
+    "room_name": "Angsana",
+    "room_class": "1",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-03",
+    "room_name": "Cemara",
+    "room_class": "2",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-04",
+    "room_name": "Cendana (IMP)",
+    "room_class": "1",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-05",
+    "room_name": "Cendana (IMP)",
+    "room_class": "2",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-06",
+    "room_name": "Cendana (IMP)",
+    "room_class": "3",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-07",
+    "room_name": "Cendana (IMP)",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-08",
+    "room_name": "Cendana (IMP)",
+    "room_class": "VK Non Kelas",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-09",
+    "room_name": "Cendana (IMP)",
+    "room_class": "HCU Maternal Non Kelas",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-10",
+    "room_name": "Cendana (IMP)",
+    "room_class": "SCN Non Kelas",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-11",
+    "room_name": "Cendana (IMP)",
+    "room_class": "NICU Non Kelas",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-12",
+    "room_name": "Ketapang",
+    "room_class": "1",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-13",
+    "room_name": "Ketapang",
+    "room_class": "3",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-14",
+    "room_name": "Akasia",
+    "room_class": "3",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-15",
+    "room_name": "Eboni",
+    "room_class": "3",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-16",
+    "room_name": "Pinus",
+    "room_class": "1",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-17",
+    "room_name": "Pinus",
+    "room_class": "2",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-18",
+    "room_name": "Pinus",
+    "room_class": "3",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-19",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-20",
+    "room_name": "ICU",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "0142R028-21",
+    "room_name": "ICU",
+    "room_class": "Non Kelas (PICU)",
+    "hospital_id": "0142R028"
+  },
+  {
+    "room_id": "1111R005-01",
+    "room_name": "Yordan",
+    "room_class": "VIP",
+    "hospital_id": "1111R005"
+  },
+  {
+    "room_id": "1111R005-02",
+    "room_name": "Yordan",
+    "room_class": "1",
+    "hospital_id": "1111R005"
+  },
+  {
+    "room_id": "1111R005-03",
+    "room_name": "Yordan",
+    "room_class": "2",
+    "hospital_id": "1111R005"
+  },
+  {
+    "room_id": "1111R005-04",
+    "room_name": "Toga",
+    "room_class": "1",
+    "hospital_id": "1111R005"
+  },
+  {
+    "room_id": "1111R005-05",
+    "room_name": "Toga",
+    "room_class": "2",
+    "hospital_id": "1111R005"
+  },
+  {
+    "room_id": "1111R005-06",
+    "room_name": "Zaitun",
+    "room_class": "3",
+    "hospital_id": "1111R005"
+  },
+  {
+    "room_id": "1111R005-07",
+    "room_name": "Zaitun",
+    "room_class": "2",
+    "hospital_id": "1111R005"
+  },
+  {
+    "room_id": "1111R005-08",
+    "room_name": "Isolasi Yordan",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R005"
+  },
+  {
+    "room_id": "1111R005-09",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R005"
+  },
+  {
+    "room_id": "1111R005-10",
+    "room_name": "PICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R005"
+  },
+  {
+    "room_id": "1111R005-11",
+    "room_name": "NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1111R005"
+  },
+  {
+    "room_id": "0142R030-01",
+    "room_name": "Yudhistira",
+    "room_class": "VIP",
+    "hospital_id": "0142R030"
+  },
+  {
+    "room_id": "0142R030-02",
+    "room_name": "Gatotkaca",
+    "room_class": "VIP",
+    "hospital_id": "0142R030"
+  },
+  {
+    "room_id": "0142R030-03",
+    "room_name": "Bima",
+    "room_class": "1",
+    "hospital_id": "0142R030"
+  },
+  {
+    "room_id": "0142R030-04",
+    "room_name": "Abimanyu",
+    "room_class": "1",
+    "hospital_id": "0142R030"
+  },
+  {
+    "room_id": "0142R030-05",
+    "room_name": "Arjuna",
+    "room_class": "2",
+    "hospital_id": "0142R030"
+  },
+  {
+    "room_id": "0142R030-06",
+    "room_name": "Antasena",
+    "room_class": "2",
+    "hospital_id": "0142R030"
+  },
+  {
+    "room_id": "0142R030-07",
+    "room_name": "Sadewa",
+    "room_class": "3",
+    "hospital_id": "0142R030"
+  },
+  {
+    "room_id": "0142R030-08",
+    "room_name": "Antareja",
+    "room_class": "3",
+    "hospital_id": "0142R030"
+  },
+  {
+    "room_id": "0142R030-09",
+    "room_name": "IGD",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R030"
+  },
+  {
+    "room_id": "0142R030-10",
+    "room_name": "VK",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R030"
+  },
+  {
+    "room_id": "0142R030-11",
+    "room_name": "Ruang Transit",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R030"
+  },
+  {
+    "room_id": "0142R030-12",
+    "room_name": "Ruang Nifas",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R030"
+  },
+  {
+    "room_id": "0142R030-13",
+    "room_name": "Ruang Isolasi",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R030"
+  },
+  {
+    "room_id": "0142R030-14",
+    "room_name": "Ruang ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R030"
+  },
+  {
+    "room_id": "0142R030-15",
+    "room_name": "Ruang NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R030"
+  },
+  {
+    "room_id": "0142R030-16",
+    "room_name": "Ruang Perinatalogi",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R030"
+  },
+  {
+    "room_id": "0142S002-01",
+    "room_name": "Amanda",
+    "room_class": "Utama",
+    "hospital_id": "0142S002"
+  },
+  {
+    "room_id": "0142S002-02",
+    "room_name": "Amanda",
+    "room_class": "1",
+    "hospital_id": "0142S002"
+  },
+  {
+    "room_id": "0142S002-03",
+    "room_name": "Amanda",
+    "room_class": "2",
+    "hospital_id": "0142S002"
+  },
+  {
+    "room_id": "0142S002-04",
+    "room_name": "Amanda",
+    "room_class": "3",
+    "hospital_id": "0142S002"
+  },
+  {
+    "room_id": "0142R011-01",
+    "room_name": "ICU Isolasi",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-02",
+    "room_name": "ICU",
+    "room_class": "2",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-03",
+    "room_name": "Albarokah",
+    "room_class": "VIP",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-04",
+    "room_name": "Albarokah",
+    "room_class": "1",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-05",
+    "room_name": "Albarokah",
+    "room_class": "2",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-06",
+    "room_name": "Albarokah",
+    "room_class": "3",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-07",
+    "room_name": "Albarokah",
+    "room_class": "Peristi",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-08",
+    "room_name": "Albarokah",
+    "room_class": "VK RI",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-09",
+    "room_name": "Assalam",
+    "room_class": "1",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-10",
+    "room_name": "Assakinah",
+    "room_class": "2",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-11",
+    "room_name": "Assakinah",
+    "room_class": "HCU",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-12",
+    "room_name": "Arafah",
+    "room_class": "1",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-13",
+    "room_name": "Arafah",
+    "room_class": "2",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-14",
+    "room_name": "Arafah",
+    "room_class": "VIP",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-15",
+    "room_name": "Arafah",
+    "room_class": "Isolasi",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-16",
+    "room_name": "Arrahman",
+    "room_class": "3",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-17",
+    "room_name": "Arrahman",
+    "room_class": "Anak",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0142R011-18",
+    "room_name": "Arrahman",
+    "room_class": "Isolasi",
+    "hospital_id": "0142R011"
+  },
+  {
+    "room_id": "0141R012-01",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-02",
+    "room_name": "ICU",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-03",
+    "room_name": "ICU",
+    "room_class": "VIP",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-04",
+    "room_name": "ICU",
+    "room_class": "1",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-05",
+    "room_name": "ICU",
+    "room_class": "2",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-06",
+    "room_name": "ICU",
+    "room_class": "3",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-07",
+    "room_name": "Perina",
+    "room_class": "1",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-08",
+    "room_name": "Perina",
+    "room_class": "2",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-09",
+    "room_name": "Perina",
+    "room_class": "3",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-10",
+    "room_name": "Perina",
+    "room_class": "NICU",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-11",
+    "room_name": "Perina",
+    "room_class": "PICU",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-12",
+    "room_name": "Perina",
+    "room_class": "Perinatologi",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-13",
+    "room_name": "Perina",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-14",
+    "room_name": "As Salam",
+    "room_class": "VIP",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-15",
+    "room_name": "As Salam",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-16",
+    "room_name": "As Salam",
+    "room_class": "3",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-17",
+    "room_name": "As Salam",
+    "room_class": "3 Isolasi",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-18",
+    "room_name": "As Salam",
+    "room_class": "2 Isolasi",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-19",
+    "room_name": "As Salam",
+    "room_class": "2",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-20",
+    "room_name": "As Salam",
+    "room_class": "1",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-21",
+    "room_name": "As Salam",
+    "room_class": "1 Isolasi",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-22",
+    "room_name": "As Syifa",
+    "room_class": "VIP",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-23",
+    "room_name": "As Syifa",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-24",
+    "room_name": "As Syifa",
+    "room_class": "3",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-25",
+    "room_name": "As Syifa",
+    "room_class": "3 Isolasi",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-26",
+    "room_name": "As Syifa",
+    "room_class": "2 Isolasi",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-27",
+    "room_name": "As Syifa",
+    "room_class": "2",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-28",
+    "room_name": "As Syifa",
+    "room_class": "1",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-29",
+    "room_name": "As Syifa",
+    "room_class": "1 Isolasi",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-30",
+    "room_name": "An Nafi",
+    "room_class": "VIP",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-31",
+    "room_name": "An Nafi",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-31",
+    "room_name": "An Nafi",
+    "room_class": "3",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-33",
+    "room_name": "An Nafi",
+    "room_class": "3 Isolasi",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-34",
+    "room_name": "An Nafi",
+    "room_class": "2 Isolasi",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-35",
+    "room_name": "An Nafi",
+    "room_class": "2",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-36",
+    "room_name": "An Nafi",
+    "room_class": "1",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-37",
+    "room_name": "An Nafi",
+    "room_class": "1 Isolasi",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-38",
+    "room_name": "An Nur",
+    "room_class": "VIP",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-39",
+    "room_name": "An Nur",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-40",
+    "room_name": "An Nur",
+    "room_class": "3",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-41",
+    "room_name": "An Nur",
+    "room_class": "3 Isolasi",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-42",
+    "room_name": "An Nur",
+    "room_class": "2 Isolasi",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-43",
+    "room_name": "An Nur",
+    "room_class": "2",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-44",
+    "room_name": "An Nur",
+    "room_class": "1",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0141R012-45",
+    "room_name": "An Nur",
+    "room_class": "1 Isolasi",
+    "hospital_id": "0141R012"
+  },
+  {
+    "room_id": "0142S003-01",
+    "room_name": "Bougenville",
+    "room_class": "1",
+    "hospital_id": "0142S003"
+  },
+  {
+    "room_id": "0142S003-02",
+    "room_name": "Cempaka",
+    "room_class": "2",
+    "hospital_id": "0142S003"
+  },
+  {
+    "room_id": "0142S003-03",
+    "room_name": "Dahlia",
+    "room_class": "3",
+    "hospital_id": "0142S003"
+  },
+  {
+    "room_id": "0142R038-01",
+    "room_name": "Retina",
+    "room_class": "1",
+    "hospital_id": "0142R038"
+  },
+  {
+    "room_id": "0142R038-02",
+    "room_name": "Lensa",
+    "room_class": "2",
+    "hospital_id": "0142R038"
+  },
+  {
+    "room_id": "0142R038-03",
+    "room_name": "Iris",
+    "room_class": "3",
+    "hospital_id": "0142R038"
+  },
+  {
+    "room_id": "0142R038-02",
+    "room_name": "Cornea",
+    "room_class": "VIP",
+    "hospital_id": "0142R038"
+  },
+  {
+    "room_id": "0142R038-03",
+    "room_name": "Cornea",
+    "room_class": "Isolasi",
+    "hospital_id": "0142R038"
+  },
+  {
+    "room_id": "0142R012-01",
+    "room_name": "Atlas",
+    "room_class": "Pav A",
+    "hospital_id": "0142R012"
+  },
+  {
+    "room_id": "0142R012-02",
+    "room_name": "Corpus",
+    "room_class": "Pav A",
+    "hospital_id": "0142R012"
+  },
+  {
+    "room_id": "0142R012-03",
+    "room_name": "Durameter",
+    "room_class": "Pav B",
+    "hospital_id": "0142R012"
+  },
+  {
+    "room_id": "0142R012-04",
+    "room_name": "Flavum",
+    "room_class": "Pav B",
+    "hospital_id": "0142R012"
+  },
+  {
+    "room_id": "0142R012-05",
+    "room_name": "Facet",
+    "room_class": "VIP",
+    "hospital_id": "0142R012"
+  },
+  {
+    "room_id": "0142R012-06",
+    "room_name": "Foramina",
+    "room_class": "VIP",
+    "hospital_id": "0142R012"
+  },
+  {
+    "room_id": "0142R012-07",
+    "room_name": "Femur",
+    "room_class": "1",
+    "hospital_id": "0142R012"
+  },
+  {
+    "room_id": "0142R012-08",
+    "room_name": "Tibia",
+    "room_class": "1",
+    "hospital_id": "0142R012"
+  },
+  {
+    "room_id": "0142R012-09",
+    "room_name": "Radius",
+    "room_class": "2",
+    "hospital_id": "0142R012"
+  },
+  {
+    "room_id": "0142R012-10",
+    "room_name": "Pubis",
+    "room_class": "2",
+    "hospital_id": "0142R012"
+  },
+  {
+    "room_id": "0142R012-11",
+    "room_name": "Clavicula",
+    "room_class": "3",
+    "hospital_id": "0142R012"
+  },
+  {
+    "room_id": "0142R012-12",
+    "room_name": "Scapula",
+    "room_class": "3",
+    "hospital_id": "0142R012"
+  },
+  {
+    "room_id": "0142R012-13",
+    "room_name": "Metacarpal",
+    "room_class": "3",
+    "hospital_id": "0142R012"
+  },
+  {
+    "room_id": "0142R012-14",
+    "room_name": "Metatarsal",
+    "room_class": "3",
+    "hospital_id": "0142R012"
+  },
+  {
+    "room_id": "0142R012-15",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R012"
+  },
+  {
+    "room_id": "0142R012-16",
+    "room_name": "Costae",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R012"
+  },
+  {
+    "room_id": "0142R015-01",
+    "room_name": "Mawar Anak",
+    "room_class": "1",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-02",
+    "room_name": "Mawar Anak",
+    "room_class": "2",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-03",
+    "room_name": "Mawar Anak",
+    "room_class": "3",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-04",
+    "room_name": "Mawar",
+    "room_class": "1",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-05",
+    "room_name": "Mawar",
+    "room_class": "2",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-06",
+    "room_name": "Mawar",
+    "room_class": "3",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-07",
+    "room_name": "Anggrek",
+    "room_class": "Isolasi",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-08",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-09",
+    "room_name": "ICU",
+    "room_class": "PICU Non Kelas",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-10",
+    "room_name": "ICU",
+    "room_class": "ISO ICU Non Kelas",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-11",
+    "room_name": "Melati",
+    "room_class": "Perinatology",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-12",
+    "room_name": "Melati",
+    "room_class": "NICU Non Kelas",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-13",
+    "room_name": "Lily AB",
+    "room_class": "VIP",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-14",
+    "room_name": "Lily AB",
+    "room_class": "1",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-15",
+    "room_name": "Lily AB",
+    "room_class": "2",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-16",
+    "room_name": "Lily C",
+    "room_class": "3",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-17",
+    "room_name": "Chrysan AB",
+    "room_class": "VIP",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-18",
+    "room_name": "Chrysan AB",
+    "room_class": "1",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-19",
+    "room_name": "Chrysan AB",
+    "room_class": "2",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-20",
+    "room_name": "Chrysan C",
+    "room_class": "3",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-21",
+    "room_name": "Asoka",
+    "room_class": "1",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-22",
+    "room_name": "Asoka",
+    "room_class": "2",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-23",
+    "room_name": "Asoka",
+    "room_class": "3",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-24",
+    "room_name": "Anyelir",
+    "room_class": "1",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-25",
+    "room_name": "Anyelir",
+    "room_class": "2",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R015-26",
+    "room_name": "Anyelir",
+    "room_class": "3",
+    "hospital_id": "0142R015"
+  },
+  {
+    "room_id": "0142R029-01",
+    "room_name": "Temulawak",
+    "room_class": "VIP",
+    "hospital_id": "0142R029"
+  },
+  {
+    "room_id": "0142R029-02",
+    "room_name": "Lempuyang",
+    "room_class": "3",
+    "hospital_id": "0142R029"
+  },
+  {
+    "room_id": "0142R029-03",
+    "room_name": "Remujung",
+    "room_class": "3",
+    "hospital_id": "0142R029"
+  },
+  {
+    "room_id": "0142R029-04",
+    "room_name": "Kencur",
+    "room_class": "3",
+    "hospital_id": "0142R029"
+  },
+  {
+    "room_id": "0142R029-05",
+    "room_name": "Temulawak",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0142R029"
+  },
+  {
+    "room_id": "0142R029-06",
+    "room_name": "Rosela",
+    "room_class": "1",
+    "hospital_id": "0142R029"
+  },
+  {
+    "room_id": "0142R029-07",
+    "room_name": "Kemukus",
+    "room_class": "2",
+    "hospital_id": "0142R029"
+  },
+  {
+    "room_id": "0142R029-08",
+    "room_name": "Jahe",
+    "room_class": "3",
+    "hospital_id": "0142R029"
+  },
+  {
+    "room_id": "0142R029-09",
+    "room_name": "VK",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R029"
+  },
+  {
+    "room_id": "0142R029-10",
+    "room_name": "Isolasi VK",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0142R029"
+  },
+  {
+    "room_id": "0142R029-11",
+    "room_name": "Observasi VK",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R029"
+  },
+  {
+    "room_id": "0142R029-12",
+    "room_name": "Isolasi IGD",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0142R029"
+  },
+  {
+    "room_id": "0142R029-13",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R029"
+  },
+  {
+    "room_id": "0142R029-14",
+    "room_name": "Isolasi ICU",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0142R029"
+  },
+  {
+    "room_id": "0142R029-15",
+    "room_name": "PICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R029"
+  },
+  {
+    "room_id": "0142R029-16",
+    "room_name": "NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R029"
+  },
+  {
+    "room_id": "0142R032-01",
+    "room_name": "Mina C",
+    "room_class": "1",
+    "hospital_id": "0142R032"
+  },
+  {
+    "room_id": "0142R032-02",
+    "room_name": "Paviliun Sofa",
+    "room_class": "1",
+    "hospital_id": "0142R032"
+  },
+  {
+    "room_id": "0142R032-03",
+    "room_name": "Annisa",
+    "room_class": "2",
+    "hospital_id": "0142R032"
+  },
+  {
+    "room_id": "0142R032-04",
+    "room_name": "Mina B",
+    "room_class": "2",
+    "hospital_id": "0142R032"
+  },
+  {
+    "room_id": "0142R032-05",
+    "room_name": "Mina A",
+    "room_class": "3",
+    "hospital_id": "0142R032"
+  },
+  {
+    "room_id": "0142R032-06",
+    "room_name": "Paviliun Arafah",
+    "room_class": "3",
+    "hospital_id": "0142R032"
+  },
+  {
+    "room_id": "0142R032-07",
+    "room_name": "Paviliun Marwah",
+    "room_class": "3",
+    "hospital_id": "0142R032"
+  },
+  {
+    "room_id": "0142R032-08",
+    "room_name": "Paviliun Sofa VIP",
+    "room_class": "VIP",
+    "hospital_id": "0142R032"
+  },
+  {
+    "room_id": "0142R032-09",
+    "room_name": "Perina",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R032"
+  },
+  {
+    "room_id": "0142R032-10",
+    "room_name": "HCU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R032"
+  },
+  {
+    "room_id": "0142R032-11",
+    "room_name": "NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R032"
+  },
+  {
+    "room_id": "0142R032-12",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R032"
+  },
+  {
+    "room_id": "0142R032-13",
+    "room_name": "Isolasi",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R032"
+  },
+  {
+    "room_id": "0142R032-14",
+    "room_name": "VK",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R032"
+  },
+  {
+    "room_id": "0142R032-15",
+    "room_name": "Marwah Isolasi",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R032"
+  },
+  {
+    "room_id": "0142R032-16",
+    "room_name": "Arafah",
+    "room_class": "2",
+    "hospital_id": "0142R032"
+  },
+  {
+    "room_id": "0142R014-01",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-02",
+    "room_name": "NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-03",
+    "room_name": "As-Syifa A",
+    "room_class": "2",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-04",
+    "room_name": "As-Syifa A",
+    "room_class": "3",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-05",
+    "room_name": "As-Syifa A",
+    "room_class": "VIP",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-06",
+    "room_name": "As-Syifa B",
+    "room_class": "1",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-07",
+    "room_name": "As-Syifa B",
+    "room_class": "2",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-08",
+    "room_name": "Az-Zaetun A",
+    "room_class": "2",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-09",
+    "room_name": "Az-Zaetun A",
+    "room_class": "3",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-10",
+    "room_name": "Az-Zaetun B",
+    "room_class": "1",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-11",
+    "room_name": "Az-Zaetun B",
+    "room_class": "2",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-12",
+    "room_name": "Az-Zaetun B",
+    "room_class": "Isolasi",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-13",
+    "room_name": "Isolasi",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-14",
+    "room_name": "Az-Zahra",
+    "room_class": "2",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-15",
+    "room_name": "Az-Zahra",
+    "room_class": "3",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-16",
+    "room_name": "Maternal",
+    "room_class": "1",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-12",
+    "room_name": "Maternal",
+    "room_class": "2",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-13",
+    "room_name": "Maternal",
+    "room_class": "3",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-14",
+    "room_name": "Maternal",
+    "room_class": "VIP",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R014-15",
+    "room_name": "Maternal",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0142R014"
+  },
+  {
+    "room_id": "0142R031-01",
+    "room_name": "Dominikus",
+    "room_class": "1",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-02",
+    "room_name": "Dominikus",
+    "room_class": "2",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-03",
+    "room_name": "Dominikus",
+    "room_class": "3",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-04",
+    "room_name": "Dominikus",
+    "room_class": "Isolasi",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-05",
+    "room_name": "Dominikus",
+    "room_class": "VIP",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-06",
+    "room_name": "Rosa",
+    "room_class": "1",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-07",
+    "room_name": "Rosa",
+    "room_class": "2",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-08",
+    "room_name": "Rosa",
+    "room_class": "3",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-09",
+    "room_name": "Rosa",
+    "room_class": "VIP",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-10",
+    "room_name": "Fransiskus",
+    "room_class": "1",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-11",
+    "room_name": "Fransiskus",
+    "room_class": "2",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-12",
+    "room_name": "Fransiskus",
+    "room_class": "3",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-13",
+    "room_name": "Fransiskus",
+    "room_class": "VIP",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-14",
+    "room_name": "Fransiskus",
+    "room_class": "Isolasi",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-15",
+    "room_name": "Maria",
+    "room_class": "1",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-16",
+    "room_name": "Maria",
+    "room_class": "2",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-17",
+    "room_name": "Maria",
+    "room_class": "3",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-18",
+    "room_name": "Maria",
+    "room_class": "VIP",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-19",
+    "room_name": "Theresia",
+    "room_class": "1",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-20",
+    "room_name": "Theresia",
+    "room_class": "2",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-21",
+    "room_name": "Theresia",
+    "room_class": "3",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-22",
+    "room_name": "Theresia",
+    "room_class": "VIP",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-23",
+    "room_name": "Katharina",
+    "room_class": "1",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-24",
+    "room_name": "Katharina",
+    "room_class": "2",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-25",
+    "room_name": "Katharina",
+    "room_class": "3",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-26",
+    "room_name": "Katharina",
+    "room_class": "VIP",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-27",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-28",
+    "room_name": "Michaela (Perina)",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-29",
+    "room_name": "Michaela (Perina)",
+    "room_class": "Isolasi Infeksius",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-30",
+    "room_name": "Michaela (Perina)",
+    "room_class": "Isolasi Non Infeksius",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-31",
+    "room_name": "NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-32",
+    "room_name": "PICU",
+    "room_class": "Non Infeksius",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R031-33",
+    "room_name": "HCU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R031"
+  },
+  {
+    "room_id": "0142R020-01",
+    "room_name": "Tulip I",
+    "room_class": "Eksekutif",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-02",
+    "room_name": "Tulip II",
+    "room_class": "Eksekutif",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-03",
+    "room_name": "Tulip III",
+    "room_class": "Eksekutif",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-04",
+    "room_name": "Jasmine",
+    "room_class": "Eksekutif",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-05",
+    "room_name": "Catelya",
+    "room_class": "Eksekutif",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-06",
+    "room_name": "Edelweiss I",
+    "room_class": "VVIP",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-07",
+    "room_name": "Edelweiss II",
+    "room_class": "VVIP",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-08",
+    "room_name": "Edelweiss III",
+    "room_class": "VVIP",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-09",
+    "room_name": "Tulip IV",
+    "room_class": "VIP",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-10",
+    "room_name": "Aglonema II",
+    "room_class": "VIP",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-11",
+    "room_name": "Bougenvile I",
+    "room_class": "1",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-12",
+    "room_name": "Bougenvile II",
+    "room_class": "1",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-13",
+    "room_name": "Flamboyan",
+    "room_class": "1",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-14",
+    "room_name": "Aglonema I",
+    "room_class": "1",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-15",
+    "room_name": "Anggrek I",
+    "room_class": "1",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-16",
+    "room_name": "Anggrek II",
+    "room_class": "1",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-17",
+    "room_name": "Anggrek (RB)",
+    "room_class": "1",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-18",
+    "room_name": "Anyelir I",
+    "room_class": "2",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-19",
+    "room_name": "Anyelir II",
+    "room_class": "2",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-20",
+    "room_name": "Aglonema III",
+    "room_class": "2",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-21",
+    "room_name": "Melati II",
+    "room_class": "2",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-22",
+    "room_name": "Melati III",
+    "room_class": "2",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-23",
+    "room_name": "Melati (RB)",
+    "room_class": "3",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-24",
+    "room_name": "Lavender",
+    "room_class": "3",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-25",
+    "room_name": "Dahlia V",
+    "room_class": "3",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-26",
+    "room_name": "Dahlia IV",
+    "room_class": "3",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-27",
+    "room_name": "Sakura (RB)",
+    "room_class": "3",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-28",
+    "room_name": "HCU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-29",
+    "room_name": "R. Perinatal",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R020-30",
+    "room_name": "Ruang Isolasi",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R020"
+  },
+  {
+    "room_id": "0142R013-01",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R013"
+  },
+  {
+    "room_id": "0142R013-02",
+    "room_name": "ICU",
+    "room_class": "NICU Non Kelas",
+    "hospital_id": "0142R013"
+  },
+  {
+    "room_id": "0142R013-03",
+    "room_name": "Airlangga",
+    "room_class": "1",
+    "hospital_id": "0142R013"
+  },
+  {
+    "room_id": "0142R013-04",
+    "room_name": "Airlangga",
+    "room_class": "2",
+    "hospital_id": "0142R013"
+  },
+  {
+    "room_id": "0142R013-05",
+    "room_name": "Airlangga",
+    "room_class": "Isolasi",
+    "hospital_id": "0142R013"
+  },
+  {
+    "room_id": "0142R013-06",
+    "room_name": "Brawijaya",
+    "room_class": "3",
+    "hospital_id": "0142R013"
+  },
+  {
+    "room_id": "0142R013-07",
+    "room_name": "Brawijaya",
+    "room_class": "VIP",
+    "hospital_id": "0142R013"
+  },
+  {
+    "room_id": "0142R013-08",
+    "room_name": "Cakrabuana",
+    "room_class": "VK Non Kelas",
+    "hospital_id": "0142R013"
+  },
+  {
+    "room_id": "1111R004-01",
+    "room_name": "Abimanyu",
+    "room_class": "1",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-02",
+    "room_name": "Abimanyu",
+    "room_class": "2",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-03",
+    "room_name": "Abimanyu",
+    "room_class": "VIP",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-04",
+    "room_name": "Kresna",
+    "room_class": "1",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-05",
+    "room_name": "Kresna",
+    "room_class": "2",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-06",
+    "room_name": "Kresna",
+    "room_class": "3",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-07",
+    "room_name": "Kresna",
+    "room_class": "VIP",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-08",
+    "room_name": "Arimbi",
+    "room_class": "3",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-09",
+    "room_name": "Arimbi",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-10",
+    "room_name": "Gayatri",
+    "room_class": "2",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-11",
+    "room_name": "Gayatri",
+    "room_class": "3",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-12",
+    "room_name": "Gayatri",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-13",
+    "room_name": "Parikesit",
+    "room_class": "2",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-14",
+    "room_name": "Parikesit",
+    "room_class": "3",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-15",
+    "room_name": "Parikesit",
+    "room_class": "Perina",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-16",
+    "room_name": "Parikesit",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-17",
+    "room_name": "Srikandi",
+    "room_class": "1",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-18",
+    "room_name": "Srikandi",
+    "room_class": "2",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-19",
+    "room_name": "Srikandi",
+    "room_class": "3",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-20",
+    "room_name": "Srikandi",
+    "room_class": "MDR",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-21",
+    "room_name": "Antasena",
+    "room_class": "2",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-22",
+    "room_name": "Antasena",
+    "room_class": "3",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-23",
+    "room_name": "Antasena",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-24",
+    "room_name": "ICU",
+    "room_class": "Non Isolasi",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-25",
+    "room_name": "ICU",
+    "room_class": "PICU",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-26",
+    "room_name": "ICU",
+    "room_class": "NICU",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "1111R004-27",
+    "room_name": "ICU",
+    "room_class": "Isolasi",
+    "hospital_id": "1111R004"
+  },
+  {
+    "room_id": "0142R019-01",
+    "room_name": "Mawadah 3",
+    "room_class": "1",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-02",
+    "room_name": "Mawadah 3",
+    "room_class": "2",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-03",
+    "room_name": "Mawadah 3",
+    "room_class": "3",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-04",
+    "room_name": "Mawadah 3",
+    "room_class": "VIP",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-05",
+    "room_name": "Rahmah 3",
+    "room_class": "VIP",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-06",
+    "room_name": "Rahmah 3",
+    "room_class": "VVIP",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-07",
+    "room_name": "Rahmah 3",
+    "room_class": "3",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-08",
+    "room_name": "Mawadah 4",
+    "room_class": "3",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-09",
+    "room_name": "Mawadah 4",
+    "room_class": "2",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-10",
+    "room_name": "Mawadah 4",
+    "room_class": "1",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-11",
+    "room_name": "Rahmah 4",
+    "room_class": "3",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-12",
+    "room_name": "Rahmah 4",
+    "room_class": "2",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-13",
+    "room_name": "Rahmah 4",
+    "room_class": "VIP",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-14",
+    "room_name": "Rahmah 2",
+    "room_class": "Isolasi",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-15",
+    "room_name": "Mawadah 5",
+    "room_class": "Isolasi ICU",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-16",
+    "room_name": "Mawadah 5",
+    "room_class": "ICU",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-17",
+    "room_name": "Mawadah 5",
+    "room_class": "PICU",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-18",
+    "room_name": "Mawadah 5",
+    "room_class": "NICU",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R019-19",
+    "room_name": "Kamar Bersalin",
+    "room_class": "VK",
+    "hospital_id": "0142R019"
+  },
+  {
+    "room_id": "0142R024-01",
+    "room_name": "Anggrek 1",
+    "room_class": "VIP",
+    "hospital_id": "0142R024"
+  },
+  {
+    "room_id": "0142R024-02",
+    "room_name": "Anggrek 2",
+    "room_class": "VIP",
+    "hospital_id": "0142R024"
+  },
+  {
+    "room_id": "0142R024-03",
+    "room_name": "Anggrek 3",
+    "room_class": "1",
+    "hospital_id": "0142R024"
+  },
+  {
+    "room_id": "0142R024-04",
+    "room_name": "Anggrek 4",
+    "room_class": "1",
+    "hospital_id": "0142R024"
+  },
+  {
+    "room_id": "0142R024-05",
+    "room_name": "Anggrek 5",
+    "room_class": "1",
+    "hospital_id": "0142R024"
+  },
+  {
+    "room_id": "0142R024-06",
+    "room_name": "Anggrek 6",
+    "room_class": "2",
+    "hospital_id": "0142R024"
+  },
+  {
+    "room_id": "0142R024-07",
+    "room_name": "Anggrek 7",
+    "room_class": "2",
+    "hospital_id": "0142R024"
+  },
+  {
+    "room_id": "0142R024-08",
+    "room_name": "Anggrek 9",
+    "room_class": "3",
+    "hospital_id": "0142R024"
+  },
+  {
+    "room_id": "0142R024-09",
+    "room_name": "Bugenvil 1",
+    "room_class": "3",
+    "hospital_id": "0142R024"
+  },
+  {
+    "room_id": "0142R024-10",
+    "room_name": "Bugenvil 2",
+    "room_class": "3",
+    "hospital_id": "0142R024"
+  },
+  {
+    "room_id": "0142R024-11",
+    "room_name": "Bugenvil 3",
+    "room_class": "3",
+    "hospital_id": "0142R024"
+  },
+  {
+    "room_id": "0142R024-12",
+    "room_name": "Bugenvil 4",
+    "room_class": "3",
+    "hospital_id": "0142R024"
+  },
+  {
+    "room_id": "0142R024-13",
+    "room_name": "Isolasi 1",
+    "room_class": "Isolasi",
+    "hospital_id": "0142R024"
+  },
+  {
+    "room_id": "0142R024-14",
+    "room_name": "Isolasi 2",
+    "room_class": "Isolasi",
+    "hospital_id": "0142R024"
+  },
+  {
+    "room_id": "0142R024-15",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R024"
+  },
+  {
+    "room_id": "0142R036-01",
+    "room_name": "Lantai 5 Belakang",
+    "room_class": "1",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-02",
+    "room_name": "Lantai 5 Belakang",
+    "room_class": "2",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-03",
+    "room_name": "Lantai 5 Belakang",
+    "room_class": "3",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-04",
+    "room_name": "Lantai 5 Belakang",
+    "room_class": "Isolasi",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-05",
+    "room_name": "Lantai 5 Depan",
+    "room_class": "1",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-06",
+    "room_name": "Lantai 5 Depan",
+    "room_class": "2",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-07",
+    "room_name": "Lantai 5 Depan",
+    "room_class": "3",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-08",
+    "room_name": "Lantai 5 Belakang",
+    "room_class": "Isolasi",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-09",
+    "room_name": "Lantai 4 Belakang",
+    "room_class": "1",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-10",
+    "room_name": "Lantai 4 Belakang",
+    "room_class": "2",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-11",
+    "room_name": "Lantai 4 Belakang",
+    "room_class": "3",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-12",
+    "room_name": "Lantai 4 Depan",
+    "room_class": "Isolasi",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-13",
+    "room_name": "Lantai 4 Depan",
+    "room_class": "VIP",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-14",
+    "room_name": "Lantai 4 Depan",
+    "room_class": "3",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-15",
+    "room_name": "Lantai 4 Depan",
+    "room_class": "2",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-16",
+    "room_name": "Lantai 4 Depan",
+    "room_class": "1",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-17",
+    "room_name": "Perina",
+    "room_class": "Infeksius",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-18",
+    "room_name": "Perina",
+    "room_class": "Non Infeksius",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-19",
+    "room_name": "Intensif",
+    "room_class": "ICU",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-20",
+    "room_name": "Intensif",
+    "room_class": "Isolasi ICU",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-21",
+    "room_name": "Intensif",
+    "room_class": "PICU",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-22",
+    "room_name": "Intensif",
+    "room_class": "NICU",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-23",
+    "room_name": "Intensif",
+    "room_class": "Isolasi NICU",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-24",
+    "room_name": "Intensif",
+    "room_class": "ICU MAternal",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R036-25",
+    "room_name": "VK",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R036"
+  },
+  {
+    "room_id": "0142R018-01",
+    "room_name": "Anggrek",
+    "room_class": "VIP",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-02",
+    "room_name": "Wijayakusuma",
+    "room_class": "1",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-03",
+    "room_name": "Dahlia",
+    "room_class": "2",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-04",
+    "room_name": "Mawar",
+    "room_class": "3",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-05",
+    "room_name": "Melati",
+    "room_class": "Isolasi",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-06",
+    "room_name": "Soka 1",
+    "room_class": "2",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-07",
+    "room_name": "Soka 2",
+    "room_class": "2",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-08",
+    "room_name": "Soka 3",
+    "room_class": "3",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-09",
+    "room_name": "Soka 4",
+    "room_class": "3",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-10",
+    "room_name": "Nusa Indah 1",
+    "room_class": "3",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-11",
+    "room_name": "Nusa Indah 2",
+    "room_class": "3",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-12",
+    "room_name": "Nusa Indah 3",
+    "room_class": "3",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-13",
+    "room_name": "Nusa Indah 4",
+    "room_class": "3",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-14",
+    "room_name": "Nusa Indah 5",
+    "room_class": "3",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-15",
+    "room_name": "VK",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-16",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-17",
+    "room_name": "NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R018-18",
+    "room_name": "PICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R018"
+  },
+  {
+    "room_id": "0142R033-01",
+    "room_name": "ICU",
+    "room_class": "NOn Kelas",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-02",
+    "room_name": "NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-03",
+    "room_name": "Kamar Bersalin",
+    "room_class": "VK",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-04",
+    "room_name": "Gerbera 1",
+    "room_class": "1",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-05",
+    "room_name": "Gerbera 1",
+    "room_class": "2",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-06",
+    "room_name": "Gerbera 1",
+    "room_class": "3",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-07",
+    "room_name": "Gerbera 1",
+    "room_class": "VVIP",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-08",
+    "room_name": "Gerbera 1",
+    "room_class": "Eksekutif",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-09",
+    "room_name": "Gerbera 2",
+    "room_class": "2",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-10",
+    "room_name": "Gerbera 2",
+    "room_class": "3",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-11",
+    "room_name": "Edelweis",
+    "room_class": "3",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-12",
+    "room_name": "Edelweis",
+    "room_class": "2",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-13",
+    "room_name": "Edelweis",
+    "room_class": "1",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-14",
+    "room_name": "Edelweis",
+    "room_class": "VIP",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-15",
+    "room_name": "Dandelion",
+    "room_class": "1",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-16",
+    "room_name": "Dandelion",
+    "room_class": "3",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-17",
+    "room_name": "Dandelion",
+    "room_class": "VIP",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-18",
+    "room_name": "Catelia",
+    "room_class": "3",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-19",
+    "room_name": "Catelia",
+    "room_class": "Isolasi Kelas 2",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-20",
+    "room_name": "Catelia",
+    "room_class": "PICU",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-21",
+    "room_name": "Catelia",
+    "room_class": "HCU",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0142R033-22",
+    "room_name": "Catelia",
+    "room_class": "Perina",
+    "hospital_id": "0142R033"
+  },
+  {
+    "room_id": "0143R005-01",
+    "room_name": "Tulip",
+    "room_class": "3",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "0143R005-02",
+    "room_name": "Adenium",
+    "room_class": "1",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "0143R005-03",
+    "room_name": "Adenium",
+    "room_class": "2",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "0143R005-04",
+    "room_name": "Adenium",
+    "room_class": "Isolasi",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "0143R005-05",
+    "room_name": "Adenium",
+    "room_class": "VIP",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "0143R005-06",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "0143R005-07",
+    "room_name": "Perinatologi",
+    "room_class": "Non Kelas",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "0143R005-08",
+    "room_name": "Perinatologi",
+    "room_class": "Isolasi",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "0143R005-09",
+    "room_name": "Perinatologi",
+    "room_class": "NICU",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "0143R005-10",
+    "room_name": "Perinatologi",
+    "room_class": "PICU",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "0143R005-11",
+    "room_name": "Perinatologi",
+    "room_class": "HCU Infeksi",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "0143R005-12",
+    "room_name": "Perinatologi",
+    "room_class": "HCU Non Infeksi",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "0143R005-13",
+    "room_name": "Anggrek",
+    "room_class": "1",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "0143R005-14",
+    "room_name": "Anggrek",
+    "room_class": "2",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "0143R005-15",
+    "room_name": "Anggrek",
+    "room_class": "3",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "0143R005-16",
+    "room_name": "Anggrek",
+    "room_class": "Isolasi",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "0143R005-17",
+    "room_name": "Anggrek",
+    "room_class": "VIP",
+    "hospital_id": "0143R005"
+  },
+  {
+    "room_id": "1113R002-01",
+    "room_name": "ICU",
+    "room_class": "1",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-02",
+    "room_name": "ICU",
+    "room_class": "2",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-03",
+    "room_name": "Kamila",
+    "room_class": "VIP",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-04",
+    "room_name": "Kamila",
+    "room_class": "1",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-05",
+    "room_name": "As-Shobari",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-06",
+    "room_name": "As-Shobaris",
+    "room_class": "3",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-07",
+    "room_name": "Zal B",
+    "room_class": "2",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-08",
+    "room_name": "Bangsal Isolasi",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-09",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-10",
+    "room_name": "Sochih",
+    "room_class": "2",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-11",
+    "room_name": "Sochih",
+    "room_class": "3",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-12",
+    "room_name": "Perinatologi",
+    "room_class": "Non Kelas",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-13",
+    "room_name": "Perinatologi",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-14",
+    "room_name": "Kebidanan",
+    "room_class": "2",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-15",
+    "room_name": "Kebidanan",
+    "room_class": "3",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-16",
+    "room_name": "Kebidanan",
+    "room_class": "1",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-17",
+    "room_name": "Bangsal Anak Rofiatun",
+    "room_class": "3",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-18",
+    "room_name": "Bangsal Anak Rofiatun",
+    "room_class": "1",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-19",
+    "room_name": "Bangsal Anak Rofiatun",
+    "room_class": "2",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-20",
+    "room_name": "Bangsal Anak Rofiatun",
+    "room_class": "VIP",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-21",
+    "room_name": "IGD",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "1113R002-22",
+    "room_name": "Nursyamsi",
+    "room_class": "3",
+    "hospital_id": "1113R002"
+  },
+  {
+    "room_id": "0143R003-01",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-02",
+    "room_name": "ICU",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-03",
+    "room_name": "Edelweis",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-04",
+    "room_name": "Anggrek",
+    "room_class": "1",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-05",
+    "room_name": "Anggrek",
+    "room_class": "2",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-06",
+    "room_name": "Bakung",
+    "room_class": "2",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-07",
+    "room_name": "Bakung",
+    "room_class": "1",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-08",
+    "room_name": "Bakung",
+    "room_class": "PICU Non Kelas",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-09",
+    "room_name": "Bakung",
+    "room_class": "NICU Non Kelas",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-10",
+    "room_name": "Dahlia",
+    "room_class": "2",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-11",
+    "room_name": "Dahlia",
+    "room_class": "3",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-12",
+    "room_name": "Dahlia",
+    "room_class": "1",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-13",
+    "room_name": "Flamboyan",
+    "room_class": "1",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-14",
+    "room_name": "Mawar",
+    "room_class": "VIP",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-15",
+    "room_name": "Cempaka",
+    "room_class": "3",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-16",
+    "room_name": "Cempaka",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-17",
+    "room_name": "Cempaka",
+    "room_class": "2",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-18",
+    "room_name": "Melati",
+    "room_class": "3",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R003-19",
+    "room_name": "Edelweis",
+    "room_class": "3",
+    "hospital_id": "0143R003"
+  },
+  {
+    "room_id": "0143R006-01",
+    "room_name": "Arafah",
+    "room_class": "Junior Suite",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-02",
+    "room_name": "Arafah",
+    "room_class": "Presiden Suite",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-03",
+    "room_name": "Marwah",
+    "room_class": "1",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-04",
+    "room_name": "Marwah",
+    "room_class": "2",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-05",
+    "room_name": "Marwah",
+    "room_class": "3",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-06",
+    "room_name": "Marwah",
+    "room_class": "VIP",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-07",
+    "room_name": "Shofa 2",
+    "room_class": "1",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-08",
+    "room_name": "Shofa 2",
+    "room_class": "2",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-09",
+    "room_name": "Shofa 2",
+    "room_class": "3",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-10",
+    "room_name": "Shofa 2",
+    "room_class": "Isolasi",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-11",
+    "room_name": "Shofa 3",
+    "room_class": "3",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-12",
+    "room_name": "Shofa 3",
+    "room_class": "2",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-13",
+    "room_name": "Shofa 3",
+    "room_class": "1",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-14",
+    "room_name": "Shofa 3",
+    "room_class": "Isolasi",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-15",
+    "room_name": "Shofa 4",
+    "room_class": "3",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-16",
+    "room_name": "Shofa 4",
+    "room_class": "1",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-17",
+    "room_name": "Isolasi",
+    "room_class": "Isolasi",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-18",
+    "room_name": "Perinatologi",
+    "room_class": "Infeksi",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-19",
+    "room_name": "Perinatologi",
+    "room_class": "Non Infeksi",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-20",
+    "room_name": "Perinatologi",
+    "room_class": "Kohort",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-21",
+    "room_name": "NICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-22",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R006-23",
+    "room_name": "ICU",
+    "room_class": "Isolasi",
+    "hospital_id": "0143R006"
+  },
+  {
+    "room_id": "0143R008-01",
+    "room_name": "Irna Paviliun",
+    "room_class": "1",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-02",
+    "room_name": "Irna Paviliun",
+    "room_class": "VIP",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-03",
+    "room_name": "Irna Paviliun",
+    "room_class": "VVIP",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-04",
+    "room_name": "Irna Kebidanan Kandungan dan Anak",
+    "room_class": "Isolasi",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-05",
+    "room_name": "Irna Kebidanan Kandungan dan Anak",
+    "room_class": "VIP",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-06",
+    "room_name": "Irna Kebidanan Kandungan dan Anak",
+    "room_class": "1",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-07",
+    "room_name": "Irna Kebidanan Kandungan dan Anak",
+    "room_class": "2",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-08",
+    "room_name": "Irna Kebidanan Kandungan dan Anak",
+    "room_class": "3",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-09",
+    "room_name": "Irna Bedah",
+    "room_class": "2",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-10",
+    "room_name": "Irna Bedah",
+    "room_class": "3",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-11",
+    "room_name": "Irna Bedah",
+    "room_class": "Isolasi",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-12",
+    "room_name": "Irna Non Bedah",
+    "room_class": "3",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-13",
+    "room_name": "Irna Non Bedah",
+    "room_class": "2",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-14",
+    "room_name": "Irna Non Bedah",
+    "room_class": "Isolasi",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-15",
+    "room_name": "Irna Lavender",
+    "room_class": "3",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-16",
+    "room_name": "Irna Lavender",
+    "room_class": "2",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-17",
+    "room_name": "Irna Asoka",
+    "room_class": "Agitasi",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143R008-18",
+    "room_name": "Irna Asoka",
+    "room_class": "Asoka",
+    "hospital_id": "0143R008"
+  },
+  {
+    "room_id": "0143S001-01",
+    "room_name": "Raudhah",
+    "room_class": "1",
+    "hospital_id": "0143S001"
+  },
+  {
+    "room_id": "0143S001-02",
+    "room_name": "Mina",
+    "room_class": "2",
+    "hospital_id": "0143S001"
+  },
+  {
+    "room_id": "0143S001-03",
+    "room_name": "Arafah",
+    "room_class": "Non Kelas",
+    "hospital_id": "0143S001"
+  },
+  {
+    "room_id": "0143S001-04",
+    "room_name": "Arafah",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0143S001"
+  },
+  {
+    "room_id": "0143S001-05",
+    "room_name": "Arafah",
+    "room_class": "VIP",
+    "hospital_id": "0143S001"
+  },
+  {
+    "room_id": "0143S001-06",
+    "room_name": "Arafah",
+    "room_class": "3",
+    "hospital_id": "0143S001"
+  },
+  {
+    "room_id": "0143S001-07",
+    "room_name": "Arafah",
+    "room_class": "Laki-Laki",
+    "hospital_id": "0143S001"
+  },
+  {
+    "room_id": "0143S001-08",
+    "room_name": "Arafah",
+    "room_class": "Perempuan",
+    "hospital_id": "0143S001"
+  },
+  {
+    "room_id": "0143S001-09",
+    "room_name": "Arafah",
+    "room_class": "Isolasi",
+    "hospital_id": "0143S001"
+  },
+  {
+    "room_id": "0143R009-01",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0143R009"
+  },
+  {
+    "room_id": "0143R009-02",
+    "room_name": "Perina",
+    "room_class": "NICU",
+    "hospital_id": "0143R009"
+  },
+  {
+    "room_id": "0143R009-03",
+    "room_name": "Perina",
+    "room_class": "PICU",
+    "hospital_id": "0143R009"
+  },
+  {
+    "room_id": "0143R009-04",
+    "room_name": "Perina",
+    "room_class": "Isolasi",
+    "hospital_id": "0143R009"
+  },
+  {
+    "room_id": "0143R009-05",
+    "room_name": "Perina",
+    "room_class": "Ruang Bayi Sehat",
+    "hospital_id": "0143R009"
+  },
+  {
+    "room_id": "0143R009-06",
+    "room_name": "Arofah",
+    "room_class": "Kelas 1",
+    "hospital_id": "0143R009"
+  },
+  {
+    "room_id": "0143R009-07",
+    "room_name": "Mina",
+    "room_class": "Kelas 2",
+    "hospital_id": "0143R009"
+  },
+  {
+    "room_id": "0143R009-08",
+    "room_name": "Shofa",
+    "room_class": "3",
+    "hospital_id": "0143R009"
+  },
+  {
+    "room_id": "0143R009-09",
+    "room_name": "Marwah",
+    "room_class": "3",
+    "hospital_id": "0143R009"
+  },
+  {
+    "room_id": "0143R009-10",
+    "room_name": "Rawat Gabung",
+    "room_class": "1",
+    "hospital_id": "0143R009"
+  },
+  {
+    "room_id": "0143R009-11",
+    "room_name": "Rawat Gabung",
+    "room_class": "2",
+    "hospital_id": "0143R009"
+  },
+  {
+    "room_id": "0143R009-12",
+    "room_name": "Rawat Gabung",
+    "room_class": "3",
+    "hospital_id": "0143R009"
+  },
+  {
+    "room_id": "0143R009-13",
+    "room_name": "Mina (Isolasi)",
+    "room_class": "Isolasi Non Kelas",
+    "hospital_id": "0143R009"
+  },
+  {
+    "room_id": "0143R009-14",
+    "room_name": "Mina (Isolasi)",
+    "room_class": "Intermediet",
+    "hospital_id": "0143R009"
+  },
+  {
+    "room_id": "1113R001-01",
+    "room_name": "Bougenvile",
+    "room_class": "1",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-02",
+    "room_name": "Bougenvile",
+    "room_class": "2",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-03",
+    "room_name": "Bougenvile",
+    "room_class": "3",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-04",
+    "room_name": "Cempaka",
+    "room_class": "1",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-05",
+    "room_name": "Cempaka",
+    "room_class": "2",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-06",
+    "room_name": "Dahlia",
+    "room_class": "3",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-07",
+    "room_name": "Edelweis",
+    "room_class": "2",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-08",
+    "room_name": "Edelweis",
+    "room_class": "3",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-09",
+    "room_name": "Flamboyan",
+    "room_class": "2",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-10",
+    "room_name": "Gardena",
+    "room_class": "1",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-11",
+    "room_name": "Gardena",
+    "room_class": "VIP",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-12",
+    "room_name": "Gardena",
+    "room_class": "VVIP",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-13",
+    "room_name": "Kenanga",
+    "room_class": "3",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-14",
+    "room_name": "Lily",
+    "room_class": "2",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-15",
+    "room_name": "Lily",
+    "room_class": "1",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-16",
+    "room_name": "Lavender",
+    "room_class": "3",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-17",
+    "room_name": "Menur",
+    "room_class": "1",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-18",
+    "room_name": "Perinatal",
+    "room_class": "NICU",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-19",
+    "room_name": "Perinatal",
+    "room_class": "Non Infeksi",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-20",
+    "room_name": "Perinatal",
+    "room_class": "Infeksi",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "1113R001-21",
+    "room_name": "Perinatal",
+    "room_class": "Isolasi",
+    "hospital_id": "1113R001"
+  },
+  {
+    "room_id": "0143R010-01",
+    "room_name": "Madinah",
+    "room_class": "VIP",
+    "hospital_id": "0143R010"
+  },
+  {
+    "room_id": "0143R010-02",
+    "room_name": "Madinah",
+    "room_class": "2",
+    "hospital_id": "0143R010"
+  },
+  {
+    "room_id": "0143R010-03",
+    "room_name": "Mina",
+    "room_class": "1",
+    "hospital_id": "0143R010"
+  },
+  {
+    "room_id": "0143R010-04",
+    "room_name": "Musdalifah",
+    "room_class": "2",
+    "hospital_id": "0143R010"
+  },
+  {
+    "room_id": "0143R010-05",
+    "room_name": "Shofa",
+    "room_class": "3",
+    "hospital_id": "0143R010"
+  },
+  {
+    "room_id": "0143R010-06",
+    "room_name": "Marwah",
+    "room_class": "3",
+    "hospital_id": "0143R010"
+  },
+  {
+    "room_id": "0143R010-07",
+    "room_name": "Ruang Bersalin",
+    "room_class": "1",
+    "hospital_id": "0143R010"
+  },
+  {
+    "room_id": "0143R010-08",
+    "room_name": "Ruang Bersalin",
+    "room_class": "2",
+    "hospital_id": "0143R010"
+  },
+  {
+    "room_id": "0143R010-09",
+    "room_name": "Ruang Bersalin",
+    "room_class": "3",
+    "hospital_id": "0143R010"
+  },
+  {
+    "room_id": "0143R010-10",
+    "room_name": "Ruang Bersalin",
+    "room_class": "VIP",
+    "hospital_id": "0143R010"
+  },
+  {
+    "room_id": "0143R010-11",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0143R010"
+  },
+  {
+    "room_id": "0143R010-12",
+    "room_name": "ICU",
+    "room_class": "Non Kelas",
+    "hospital_id": "0143R010"
+  }
+]

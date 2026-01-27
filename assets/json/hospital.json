@@ -1,0 +1,222 @@
+[
+  {
+    "hospital_id": "1112R001",
+    "hospital_name": "RSUD CILACAP",
+    "hospital_city": "Cilacap"
+  },
+  {
+    "hospital_id": "0141R004",
+    "hospital_name": "RSU SANTA MARIA",
+    "hospital_city": "Cilacap"
+  },
+  {
+    "hospital_id": "1112R003",
+    "hospital_name": "RSUD MAJENANG",
+    "hospital_city": "Cilacap"
+  },
+  {
+    "hospital_id": "0141R007",
+    "hospital_name": "RSU DUTA MULYA MAJENANG",
+    "hospital_city": "Cilacap"
+  },
+  {
+    "hospital_id": "0141R014",
+    "hospital_name": "RS PERTAMINA CILACAP",
+    "hospital_city": "Cilacap"
+  },
+  {
+    "hospital_id": "0141R018",
+    "hospital_name": "RSU APRILLIA",
+    "hospital_city": "Cilacap"
+  },
+  {
+    "hospital_id": "0141R016",
+    "hospital_name": "RSU RAFFA MAJENANG",
+    "hospital_city": "Cilacap"
+  },
+  {
+    "hospital_id": "0141R015",
+    "hospital_name": "RSU AGHISNA MEDIKA SIDAREJA",
+    "hospital_city": "Cilacap"
+  },
+  {
+    "hospital_id": "0141R017",
+    "hospital_name": "RSU PRISCILLA MEDICAL CENTER",
+    "hospital_city": "Cilacap"
+  },
+  {
+    "hospital_id": "1112R002",
+    "hospital_name": "RSI FATIMAH CILACAP",
+    "hospital_city": "Cilacap"
+  },
+  {
+    "hospital_id": "0143R005",
+    "hospital_name": "RSUD PANTI NUGROHO",
+    "hospital_city": "Purbalingga"
+  },
+  {
+    "hospital_id": "1113R002",
+    "hospital_name": "RSU HARAPAN IBU",
+    "hospital_city": "Purbalingga"
+  },
+  {
+    "hospital_id": "0143R003",
+    "hospital_name": "RSU NIRMALA",
+    "hospital_city": "Purbalingga"
+  },
+  {
+    "hospital_id": "0143R006",
+    "hospital_name": "RS IBU DAN ANAK UMMU HANI",
+    "hospital_city": "Purbalingga"
+  },
+  {
+    "hospital_id": "0143R008",
+    "hospital_name": "RSU SIAGA MEDIKA PURBALINGGA",
+    "hospital_city": "Purbalingga"
+  },
+  {
+    "hospital_id": "0143S001",
+    "hospital_name": "KLINIK UTAMA RAWAT INAP H MUSTAJAB",
+    "hospital_city": "Purbalingga"
+  },
+  {
+    "hospital_id": "0143R009",
+    "hospital_name": "RSU PKU MUH PURBALINGGA",
+    "hospital_city": "Purbalingga"
+  },
+  {
+    "hospital_id": "1113R001",
+    "hospital_name": "RSUD DR. R.GOETENG TAROENADIBRATA",
+    "hospital_city": "Purbalingga"
+  },
+  {
+    "hospital_id": "0143R010",
+    "hospital_name": "RS AT TIN HUSADA",
+    "hospital_city": "Purbalingga"
+  },
+  {
+    "hospital_id": "1111R001",
+    "hospital_name": "RSUD Prof. Dr. MARGONO SOEKARJO",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "1111R003",
+    "hospital_name": "RSUD BANYUMAS",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "1111R010",
+    "hospital_name": "RSUD AJIBARANG",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R028",
+    "hospital_name": "RSU DADI KELUARGA",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "1111R005",
+    "hospital_name": "RSU SINAR KASIH",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R030",
+    "hospital_name": "RSIA BUNDA ARIF",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142S002",
+    "hospital_name": "KLINIK UTAMA RAWAT INAP AMANDA",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R011",
+    "hospital_name": "RUMAH SAKIT ISLAM PURWOKERTO",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0141R012",
+    "hospital_name": "RSU AGHISNA MEDIKA KROYA",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142S003",
+    "hospital_name": "KLINIK UTAMA RAWAT INAP WISHNU HUSADA",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R038",
+    "hospital_name": "RS KHUSUS MATA PURWOKERTO",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R012",
+    "hospital_name": "RS ORTHOPAEDI PURWOKERTO",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R015",
+    "hospital_name": "RSU SIAGA MEDIKA BANYUMAS",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R029",
+    "hospital_name": "RSU MEDIKA LESTARI",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R032",
+    "hospital_name": "RSIA AMANAH SUMPIUH",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R014",
+    "hospital_name": "RSU WIRADADI HUSADA",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R031",
+    "hospital_name": "RSU ST ELISABETH",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R020",
+    "hospital_name": "RUMAH SAKIT UMUM BUNDA",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R013",
+    "hospital_name": "RSKB JATIWINANGUN",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "1111R004",
+    "hospital_name": "RS TK.III WIJAYAKUSUMA",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R019",
+    "hospital_name": "RSU AN-NI'MAH",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R024",
+    "hospital_name": "RSKB MITRA ARIVA",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R036",
+    "hospital_name": "RSU HERMINA",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R018",
+    "hospital_name": "RUMAH SAKIT UMUM HIDAYAH",
+    "hospital_city": "Banyumas"
+  },
+  {
+    "hospital_id": "0142R033",
+    "hospital_name": "RSU ANANDA",
+    "hospital_city": "Banyumas"
+  }
+]
