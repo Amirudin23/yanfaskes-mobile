@@ -195,7 +195,7 @@ class _CreateHospitalScreenState extends State<CreateHospitalScreen> {
                     widget.data != null ? await updateHospital(hospital) : await addHospital(hospital);
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue,
+                    backgroundColor: Color(0XFF2A4491),
                     foregroundColor: Colors.white,
                     elevation: 0,
                     shadowColor: Colors.transparent,

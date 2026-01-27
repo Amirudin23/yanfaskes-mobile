@@ -233,7 +233,7 @@ class _CreateRoomScreenState extends State<CreateRoomScreen> {
                     widget.data != null ? await updateRoom(room) : await addRoom(room);
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue,
+                    backgroundColor: Color(0XFF2A4491),
                     foregroundColor: Colors.white,
                     elevation: 0,
                     shadowColor: Colors.transparent,

@@ -252,7 +252,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ),
                                     curve: Curves.easeInOut,
                                     duration: Duration(milliseconds: 1000),
-                        
                                   ),
                                 ),
                                 Column(
@@ -442,13 +441,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Text("Ruangan Setiap Rumah Sakit", style: TextStyle(fontWeight: FontWeight.w500),),
                   ),
                   TabBar(
-                    labelColor: Colors.black,
+                    labelColor: Color(0XFF2A4491),
                     tabs: [
                       Tab(text: "Cilacap"),
                       Tab(text: "Banyumas"),
                       Tab(text: "Purbalingga"),
                     ],
                     indicatorColor: Color(0XFF2A4491),
+                    unselectedLabelColor: Colors.black87,
+                    labelStyle: TextStyle(fontWeight: FontWeight.w500),
+                    unselectedLabelStyle: TextStyle(fontWeight: FontWeight.w400),
                     textScaler: TextScaler.noScaling,
                     dividerColor: Colors.transparent,
                     splashFactory: NoSplash.splashFactory,
@@ -458,105 +460,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 400,
                     child: TabBarView(
                       children: [
-                        Container(
-                          margin: EdgeInsets.symmetric(vertical: 15),
-                          child: roomCilacap.isNotEmpty ? ListView.builder(
-                            itemCount: roomCilacap.length,
-                            itemBuilder: (context, index) {
-                              var item = roomCilacap[index];
-                              return Container(
-                                margin: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
-                                padding: EdgeInsets.all(10),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(6),
-                                  color: Colors.white,
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.black12,
-                                      offset: Offset(0, 1),
-                                      blurRadius: 5,
-                                      spreadRadius: 2,
-                                    ),
-                                  ],
-                                ),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(item.id, textScaler: TextScaler.noScaling, style: TextStyle(fontSize: 12, color: Colors.black54),),
-                                    Text(item.name, textScaler: TextScaler.noScaling,),
-                                    Text("Jumlah Ruangan : ${item.totalRoom}", textScaler: TextScaler.noScaling, style: TextStyle(fontWeight: FontWeight.w500),),
-                                  ],
-                                ),
-                              );
-                            },
-                          ) : Center(child: Text("Tidak ada data", textScaler: TextScaler.noScaling,),),
-                        ),
-                        Container(
-                          margin: EdgeInsets.symmetric(vertical: 15),
-                          child: roomBanyumas.isNotEmpty ? ListView.builder(
-                            itemCount: roomBanyumas.length,
-                            itemBuilder: (context, index) {
-                              var item = roomBanyumas[index];
-                              return Container(
-                                margin: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
-                                padding: EdgeInsets.all(10),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(6),
-                                  color: Colors.white,
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.black12,
-                                      offset: Offset(0, 1),
-                                      blurRadius: 5,
-                                      spreadRadius: 2,
-                                    ),
-                                  ],
-                                ),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(item.id, textScaler: TextScaler.noScaling, style: TextStyle(fontSize: 12, color: Colors.black54),),
-                                    Text(item.name, textScaler: TextScaler.noScaling,),
-                                    Text("Jumlah Ruangan : ${item.totalRoom}", textScaler: TextScaler.noScaling, style: TextStyle(fontWeight: FontWeight.w500),),
-                                  ],
-                                ),
-                              );
-                            },
-                          ) : Center(child: Text("Tidak ada data", textScaler: TextScaler.noScaling,),),
-                        ),
-                        Container(
-                          margin: EdgeInsets.symmetric(vertical: 15),
-                          child: roomPurbalingga.isNotEmpty ? ListView.builder(
-                            itemCount: roomPurbalingga.length,
-                            itemBuilder: (context, index) {
-                              var item = roomPurbalingga[index];
-                              return Container(
-                                margin: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
-                                padding: EdgeInsets.all(10),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(6),
-                                  color: Colors.white,
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.black12,
-                                      offset: Offset(0, 1),
-                                      blurRadius: 5,
-                                      spreadRadius: 2,
-                                    ),
-                                  ],
-                                ),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(item.id, textScaler: TextScaler.noScaling, style: TextStyle(fontSize: 12, color: Colors.black54),),
-                                    Text(item.name, textScaler: TextScaler.noScaling,),
-                                    Text("Jumlah Ruangan : ${item.totalRoom}", textScaler: TextScaler.noScaling, style: TextStyle(fontWeight: FontWeight.w500),),
-                                  ],
-                                ),
-                              );
-                            },
-                          ) : Center(child: Text("Tidak ada data", textScaler: TextScaler.noScaling,),),
-                        ),
+                        roomCilacap.isNotEmpty ? roomWidget(roomCilacap) : Center(child: Text("Tidak ada data", textScaler: TextScaler.noScaling,),),
+                        roomBanyumas.isNotEmpty ? roomWidget(roomBanyumas) : Center(child: Text("Tidak ada data", textScaler: TextScaler.noScaling,),),
+                        roomPurbalingga.isNotEmpty ? roomWidget(roomPurbalingga) : Center(child: Text("Tidak ada data", textScaler: TextScaler.noScaling,),),
                       ]
                     ),
                   ),
@@ -565,6 +471,42 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  Widget roomWidget(List<HospitalRoomCount> data){
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 15),
+      child: ListView.builder(
+        itemCount: data.length,
+        itemBuilder: (context, index) {
+          var item = data[index];
+          return Container(
+            margin: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
+            padding: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(6),
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black12,
+                  offset: Offset(0, 1),
+                  blurRadius: 5,
+                  spreadRadius: 2,
+                ),
+              ],
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(item.id, textScaler: TextScaler.noScaling, style: TextStyle(fontSize: 12, color: Colors.black54),),
+                Text(item.name, textScaler: TextScaler.noScaling,),
+                Text("Jumlah Ruangan : ${item.totalRoom}", textScaler: TextScaler.noScaling, style: TextStyle(fontWeight: FontWeight.w500),),
+              ],
+            ),
+          );
+        },
       ),
     );
   }

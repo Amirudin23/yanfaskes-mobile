@@ -229,7 +229,7 @@ class _RoomScreenState extends State<RoomScreen> {
                                   height: 50,
                                   padding: const EdgeInsets.symmetric(horizontal: 20),
                                   decoration: BoxDecoration(
-                                    color: Colors.blue,
+                                    color: Color(0XFF2A4491),
                                     borderRadius: BorderRadius.only(
                                       topLeft: Radius.circular(10),
                                       topRight: Radius.circular(10),
@@ -346,7 +346,7 @@ class _RoomScreenState extends State<RoomScreen> {
                                                 width: (size.width / 3) - 10,
                                                 decoration: BoxDecoration(
                                                   borderRadius: BorderRadius.circular(12),
-                                                  color: Colors.blue,
+                                                  color: Color(0XFF2A4491),
                                                 ),
                                                 child: Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
