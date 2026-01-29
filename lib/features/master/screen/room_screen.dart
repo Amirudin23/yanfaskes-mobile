@@ -191,7 +191,7 @@ class _RoomScreenState extends State<RoomScreen> {
                 ),
               ),
             ),
-            filteredRoom.isEmpty ? Expanded(child: Center(child: Text("Data tidak ditemukan"))) : Expanded(
+            (selectedHospitalId == null || selectedHospitalId!.isEmpty) && widget.isTransaction != null ? Expanded(child: Center(child: Text("Silakan pilih rumah sakit"))) :  filteredRoom.isEmpty ? Expanded(child: Center(child: Text("Data tidak ditemukan"))) : Expanded(
               child: ListView.builder(
                 itemCount: filteredRoom.length,
                 itemBuilder: (context, index){

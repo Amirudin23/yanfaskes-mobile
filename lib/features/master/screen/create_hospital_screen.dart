@@ -86,9 +86,11 @@ class _CreateHospitalScreenState extends State<CreateHospitalScreen> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text("Tambah Rumah Sakit", textScaler: TextScaler.noScaling,),
         scrolledUnderElevation: 0,
+        backgroundColor: Colors.white,
         actions: [
           widget.data !=null ? IconButton(
             onPressed: () async {
@@ -162,6 +164,7 @@ class _CreateHospitalScreenState extends State<CreateHospitalScreen> {
                     }  
                   });
                 },
+                padding: EdgeInsets.symmetric(horizontal: 20),
                 initialValue: selectedHospitalCity,
                 items: ["Cilacap", "Banyumas", "Purbalingga"].map((item) => DropdownMenuItem(value: item, child: Text(item, textScaler: TextScaler.noScaling,))).toList(),
                 decoration: InputDecoration(

@@ -125,9 +125,11 @@ class _CreateRoomScreenState extends State<CreateRoomScreen> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text("Tambah Ruangan", textScaler: TextScaler.noScaling,),
         scrolledUnderElevation: 0,
+        backgroundColor: Colors.white,
         actions: [
           widget.data !=null ? IconButton(
             onPressed: () async {
