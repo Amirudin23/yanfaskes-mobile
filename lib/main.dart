@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:sistem_rs/features/hospital/model/hospital_model.dart';
-import 'package:sistem_rs/features/master/model/room_model.dart';
+import 'package:sistem_rs/features/room/model/room_model.dart';
 import 'package:sistem_rs/features/hospital/screen/hospital_screen.dart';
 import 'package:sistem_rs/features/room/screen/room_screen.dart';
 import 'package:sistem_rs/features/transaction/screen/transaction_screen.dart';

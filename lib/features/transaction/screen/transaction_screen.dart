@@ -2,7 +2,7 @@ import 'package:hive/hive.dart';
 import 'package:flutter/material.dart';
 import 'package:quickalert/quickalert.dart';
 import 'package:sistem_rs/features/hospital/model/hospital_model.dart';
-import 'package:sistem_rs/features/master/model/room_model.dart';
+import 'package:sistem_rs/features/room/model/room_model.dart';
 import 'package:sistem_rs/features/transaction/screen/create_transaction_screen.dart';
 import 'package:sistem_rs/manager/hive_db_helper.dart';
 

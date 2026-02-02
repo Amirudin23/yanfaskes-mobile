@@ -6,7 +6,7 @@ import 'package:intl/intl.dart';
 import 'package:printing/printing.dart';
 import 'package:quickalert/quickalert.dart';
 import 'package:sistem_rs/features/hospital/model/hospital_model.dart';
-import 'package:sistem_rs/features/master/model/room_model.dart';
+import 'package:sistem_rs/features/room/model/room_model.dart';
 import 'package:sistem_rs/features/room/screen/create_room_screen.dart';
 import 'package:sistem_rs/manager/hive_db_helper.dart';
 import 'package:uuid/uuid.dart';
