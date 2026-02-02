@@ -85,9 +85,15 @@ class _TransactionScreenState extends State<TransactionScreen> {
       length: 3,
       child: Scaffold(
         backgroundColor: Colors.white,
+        appBar: AppBar(
+          backgroundColor: Colors.white,
+          elevation: 0,
+          // centerTitle: true,
+          // title: Text("Transaksi", textScaler: TextScaler.noScaling, style: TextStyle(color: Colors.black),),
+        ),
         body: Container(
           padding: EdgeInsets.symmetric(vertical: 10),
-          height: size.height,
+          height: size.height - kToolbarHeight,
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -109,7 +115,7 @@ class _TransactionScreenState extends State<TransactionScreen> {
                   overlayColor: WidgetStateProperty.all(Colors.transparent),
                 ),
                 SizedBox(
-                  height: size.height - kToolbarHeight,
+                  height: size.height - (kToolbarHeight * 2),
                   child: TabBarView(
                     children: [
                       roomCilacap.isNotEmpty ? roomWidget(roomCilacap) : Center(child: Text("Tidak ada data", textScaler: TextScaler.noScaling,),),
