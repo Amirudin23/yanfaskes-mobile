@@ -42,7 +42,6 @@ void main() async {
       }
     }
   }
-
   final transaction = await Hive.openBox(HiveDbServices.boxTransaction);
   List<dynamic> rawList = transaction.get(HiveDbServices.boxTransaction, defaultValue: []);
   List<Map<dynamic, dynamic>> allTransactions = rawList.map((e) => Map<dynamic, dynamic>.from(e)).toList();
@@ -164,11 +163,6 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     readHospitalData();
   }
-  
-  @override
-  void dispose() {
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -223,37 +217,34 @@ class _MyHomePageState extends State<MyHomePage> {
                                     pieTouchData: PieTouchData(
                                       enabled: false,
                                     ),
-                      
                                   ),
                                   curve: Curves.easeInOut,
                                   duration: Duration(milliseconds: 1000),
                                 ),
                               ),
                               Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Text(
-                                      textScaler: TextScaler.noScaling,
-                                      "Total Rumah Sakit",
-                                      style: TextStyle(
-                                        fontSize: 11,
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w600,
-                                        fontFamily: "Poppins",
-                                      ),
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Text(
+                                    textScaler: TextScaler.noScaling,
+                                    "Total Rumah Sakit",
+                                    style: TextStyle(
+                                      fontSize: 11,
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.w600,
                                     ),
-                                    Text(
-                                      textScaler: TextScaler.noScaling,
-                                      allHospitals.isNotEmpty ? allHospitals.length.toString() : "0",
-                                      style: TextStyle(
-                                        fontSize: 11,
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w400,
-                                        fontFamily: "Poppins",
-                                      ),
+                                  ),
+                                  Text(
+                                    textScaler: TextScaler.noScaling,
+                                    allHospitals.isNotEmpty ? allHospitals.length.toString() : "0",
+                                    style: TextStyle(
+                                      fontSize: 11,
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.w400,
                                     ),
-                                  ],
-                                ),
+                                  ),
+                                ],
+                              ),
                             ],
                           ),
                           SizedBox(width: 20),
@@ -265,7 +256,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 return Container(
                                   margin: EdgeInsets.only(bottom: 10),
                                   child: SizedBox(
-                                    width: (MediaQuery.sizeOf(context).width * 0.5 - 40),
+                                    width: MediaQuery.sizeOf(context).width * 0.5 - 40,
                                     child : Row(
                                       children: [
                                         Container(

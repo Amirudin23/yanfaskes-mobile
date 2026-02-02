@@ -48,7 +48,6 @@ class _CreateRoomScreenState extends State<CreateRoomScreen> {
 
       if (currentHospitalId == data.hospitalId) {
         List<String> parts = currentId.split('-');
-        
         if (parts.length == 2) {
           int? seq = int.tryParse(parts[1]);
           if (seq != null && seq > maxSequence) {
@@ -253,7 +252,6 @@ class _CreateRoomScreenState extends State<CreateRoomScreen> {
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       fontSize: 16,
-                      fontFamily: "Poppins",
                     ),
                   )
                 ),

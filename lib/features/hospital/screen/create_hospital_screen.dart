@@ -216,7 +216,6 @@ class _CreateHospitalScreenState extends State<CreateHospitalScreen> {
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 16,
-                      fontFamily: "Poppins",
                     ),
                   )
                 ),

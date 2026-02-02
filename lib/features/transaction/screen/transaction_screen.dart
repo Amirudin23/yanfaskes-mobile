@@ -46,7 +46,6 @@ class _TransactionScreenState extends State<TransactionScreen> {
 
     readRoomData();
   }
-
   
   void readRoomData() {
     var box = Hive.box(HiveDbServices.boxRoom);
@@ -88,8 +87,6 @@ class _TransactionScreenState extends State<TransactionScreen> {
         appBar: AppBar(
           backgroundColor: Colors.white,
           elevation: 0,
-          // centerTitle: true,
-          // title: Text("Transaksi", textScaler: TextScaler.noScaling, style: TextStyle(color: Colors.black),),
         ),
         body: Container(
           padding: EdgeInsets.symmetric(vertical: 10),
@@ -245,18 +242,6 @@ class _TransactionScreenState extends State<TransactionScreen> {
       }
     );
   }
-}
-
-class HospitalData {
-  String? hospitalId;
-  String? hospitalName;
-  String? hospitalCity;
-
-  HospitalData({
-    this.hospitalId,
-    this.hospitalName,
-    this.hospitalCity,
-  });
 }
 
 class HospitalRoomCount {

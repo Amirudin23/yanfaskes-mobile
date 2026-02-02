@@ -162,7 +162,6 @@ class _CreateTransactionScreenState extends State<CreateTransactionScreen> {
 
           final int totalBeds = roomCount * bedsCount;
 
-
           tableData.add([
             roomName,
             roomClass,
@@ -303,194 +302,194 @@ class _CreateTransactionScreenState extends State<CreateTransactionScreen> {
                     highlightColor: Colors.transparent,
                     onTap: () async {
                       var result = await showDialog(
-                          context: context,
-                          barrierDismissible: false,
-                          builder: (context) {
-                            return StatefulBuilder(builder: (context, setState) {
-                              return AlertDialog(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                ),
-                                backgroundColor: Colors.white,
-                                elevation: 0,
-                                titlePadding: const EdgeInsets.all(0),
-                                titleTextStyle: TextStyle(
-                                  fontSize: 12,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                                title: Container(
-                                  height: 50,
-                                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                                  decoration: BoxDecoration(
-                                    color: Color(0XFF2A4491),
-                                    borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(10),
-                                      topRight: Radius.circular(10),
-                                    ),
-                                  ),
-                                  child: InkWell(
-                                    onTap: () {
-                                      Navigator.pop(context);
-                                    },
-                                    splashColor: Colors.transparent,
-                                    highlightColor: Colors.transparent,
-                                    child: Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Text("Ruangan ${item.roomName}", textScaler: TextScaler.noScaling,),
-                                        Icon(
-                                          Icons.close_rounded,
-                                          color: Colors.white,
-                                        )
-                                      ],
-                                    ),
+                        context: context,
+                        barrierDismissible: false,
+                        builder: (context) {
+                          return StatefulBuilder(builder: (context, setState) {
+                            return AlertDialog(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              backgroundColor: Colors.white,
+                              elevation: 0,
+                              titlePadding: const EdgeInsets.all(0),
+                              titleTextStyle: TextStyle(
+                                fontSize: 12,
+                                color: Colors.white,
+                                fontWeight: FontWeight.w700,
+                              ),
+                              title: Container(
+                                height: 50,
+                                padding: const EdgeInsets.symmetric(horizontal: 20),
+                                decoration: BoxDecoration(
+                                  color: Color(0XFF2A4491),
+                                  borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(10),
+                                    topRight: Radius.circular(10),
                                   ),
                                 ),
-                                content: Container(
-                                  height: 380,
-                                  color: Colors.white,
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                child: InkWell(
+                                  onTap: () {
+                                    Navigator.pop(context);
+                                  },
+                                  splashColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Text("Jumlah ruangan", textScaler: TextScaler.noScaling,),
-                                      SizedBox(height: 10),
-                                      TextFormField(
-                                        controller: roomCountController,
-                                        decoration: InputDecoration(
-                                          hint: Text("Masukkan jumlah ruangan", textScaler: TextScaler.noScaling,),
-                                          filled: true,
-                                          fillColor: Colors.white,
-                                          border: OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(8),
-                                            borderSide: BorderSide(color: Colors.black26, width: 1.5)
-                                          ),
-                                          enabledBorder: OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(8),
-                                            borderSide: BorderSide(color: Colors.black26, width: 1.5)
-                                          ),
-                                          focusedBorder: OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(8),
-                                            borderSide: BorderSide(color: Colors.black26, width: 1.5)
-                                          ),
-                                        ),
-                                      ),
-                                      SizedBox(height: 20),
-                                      Text("Jumlah Tempat Tidur", textScaler: TextScaler.noScaling,),
-                                      SizedBox(height: 10),
-                                      TextFormField(
-                                        controller: bedCountController,
-                                        decoration: InputDecoration(
-                                          hint: Text("Masukkan jumlah tempat tidur", textScaler: TextScaler.noScaling,),
-                                          filled: true,
-                                          fillColor: Colors.white,
-                                          border: OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(8),
-                                            borderSide: BorderSide(color: Colors.black26, width: 1.5)
-                                          ),
-                                          enabledBorder: OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(8),
-                                            borderSide: BorderSide(color: Colors.black26, width: 1.5)
-                                          ),
-                                          focusedBorder: OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(8),
-                                            borderSide: BorderSide(color: Colors.black26, width: 1.5)
-                                          ),
-                                        ),
-                                      ),
-                                      SizedBox(height: 20),
-                                      Text("Temuan", textScaler: TextScaler.noScaling,),
-                                      SizedBox(height: 10),
-                                      TextFormField(
-                                        controller: findingsController,
-                                        decoration: InputDecoration(
-                                          hint: Text("Masukkan temuan", textScaler: TextScaler.noScaling,),
-                                          filled: true,
-                                          fillColor: Colors.white,
-                                          border: OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(8),
-                                            borderSide: BorderSide(color: Colors.black26, width: 1.5)
-                                          ),
-                                          enabledBorder: OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(8),
-                                            borderSide: BorderSide(color: Colors.black26, width: 1.5)
-                                          ),
-                                          focusedBorder: OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(8),
-                                            borderSide: BorderSide(color: Colors.black26, width: 1.5)
-                                          ),
-                                        ),
-                                      ),
-                                      Spacer(),
-                                      Container(
-                                        margin: const EdgeInsets.only(top: 10),
-                                        child: Row(
-                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            InkWell(
-                                              onTap: () {
-                                                Navigator.pop(context);
-                                              },
-                                              splashColor: Colors.transparent,
-                                              highlightColor: Colors.transparent,
-                                              child: Container(
-                                                height: 40,
-                                                width: (size.width / 4) - 10,
-                                                decoration: BoxDecoration(
-                                                  borderRadius: BorderRadius.circular(12),
-                                                  color: Color(0xffD9D9D9),
-                                                ),
-                                                alignment: Alignment.center,
-                                                child: Text(
-                                                  "Batalkan",
-                                                  textScaler: TextScaler.noScaling,
-                                                  style: TextStyle(
-                                                    fontSize: 12,
-                                                    color: Colors.white,
-                                                    fontWeight: FontWeight.w700,
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                            InkWell(
-                                              onTap: () {
-                                                Navigator.pop(context, true);
-                                              },
-                                              splashColor: Colors.transparent,
-                                              highlightColor: Colors.transparent,
-                                              child: Container(
-                                                height: 40,
-                                                width: (size.width / 3) - 10,
-                                                decoration: BoxDecoration(
-                                                  borderRadius: BorderRadius.circular(12),
-                                                  color: Color(0XFF2A4491),
-                                                ),
-                                                child: Row(
-                                                  mainAxisAlignment: MainAxisAlignment.center,
-                                                  children: [
-                                                    Text(
-                                                      "Simpan",
-                                                      textScaler: TextScaler.noScaling,
-                                                      style: TextStyle(
-                                                        fontSize: 12,
-                                                        color: Colors.white,
-                                                        fontWeight: FontWeight.w700,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
+                                      Text("Ruangan ${item.roomName}", textScaler: TextScaler.noScaling,),
+                                      Icon(
+                                        Icons.close_rounded,
+                                        color: Colors.white,
                                       )
                                     ],
                                   ),
                                 ),
-                              );
-                            });
-                          },
-                        );
+                              ),
+                              content: Container(
+                                height: 380,
+                                color: Colors.white,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Jumlah ruangan", textScaler: TextScaler.noScaling,),
+                                    SizedBox(height: 10),
+                                    TextFormField(
+                                      controller: roomCountController,
+                                      decoration: InputDecoration(
+                                        hint: Text("Masukkan jumlah ruangan", textScaler: TextScaler.noScaling,),
+                                        filled: true,
+                                        fillColor: Colors.white,
+                                        border: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(8),
+                                          borderSide: BorderSide(color: Colors.black26, width: 1.5)
+                                        ),
+                                        enabledBorder: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(8),
+                                          borderSide: BorderSide(color: Colors.black26, width: 1.5)
+                                        ),
+                                        focusedBorder: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(8),
+                                          borderSide: BorderSide(color: Colors.black26, width: 1.5)
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(height: 20),
+                                    Text("Jumlah Tempat Tidur", textScaler: TextScaler.noScaling,),
+                                    SizedBox(height: 10),
+                                    TextFormField(
+                                      controller: bedCountController,
+                                      decoration: InputDecoration(
+                                        hint: Text("Masukkan jumlah tempat tidur", textScaler: TextScaler.noScaling,),
+                                        filled: true,
+                                        fillColor: Colors.white,
+                                        border: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(8),
+                                          borderSide: BorderSide(color: Colors.black26, width: 1.5)
+                                        ),
+                                        enabledBorder: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(8),
+                                          borderSide: BorderSide(color: Colors.black26, width: 1.5)
+                                        ),
+                                        focusedBorder: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(8),
+                                          borderSide: BorderSide(color: Colors.black26, width: 1.5)
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(height: 20),
+                                    Text("Temuan", textScaler: TextScaler.noScaling,),
+                                    SizedBox(height: 10),
+                                    TextFormField(
+                                      controller: findingsController,
+                                      decoration: InputDecoration(
+                                        hint: Text("Masukkan temuan", textScaler: TextScaler.noScaling,),
+                                        filled: true,
+                                        fillColor: Colors.white,
+                                        border: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(8),
+                                          borderSide: BorderSide(color: Colors.black26, width: 1.5)
+                                        ),
+                                        enabledBorder: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(8),
+                                          borderSide: BorderSide(color: Colors.black26, width: 1.5)
+                                        ),
+                                        focusedBorder: OutlineInputBorder(
+                                          borderRadius: BorderRadius.circular(8),
+                                          borderSide: BorderSide(color: Colors.black26, width: 1.5)
+                                        ),
+                                      ),
+                                    ),
+                                    Spacer(),
+                                    Container(
+                                      margin: const EdgeInsets.only(top: 10),
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          InkWell(
+                                            onTap: () {
+                                              Navigator.pop(context);
+                                            },
+                                            splashColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            child: Container(
+                                              height: 40,
+                                              width: (size.width / 4) - 10,
+                                              decoration: BoxDecoration(
+                                                borderRadius: BorderRadius.circular(12),
+                                                color: Color(0xffD9D9D9),
+                                              ),
+                                              alignment: Alignment.center,
+                                              child: Text(
+                                                "Batalkan",
+                                                textScaler: TextScaler.noScaling,
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.w700,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          InkWell(
+                                            onTap: () {
+                                              Navigator.pop(context, true);
+                                            },
+                                            splashColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            child: Container(
+                                              height: 40,
+                                              width: (size.width / 3) - 10,
+                                              decoration: BoxDecoration(
+                                                borderRadius: BorderRadius.circular(12),
+                                                color: Color(0XFF2A4491),
+                                              ),
+                                              child: Row(
+                                                mainAxisAlignment: MainAxisAlignment.center,
+                                                children: [
+                                                  Text(
+                                                    "Simpan",
+                                                    textScaler: TextScaler.noScaling,
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                      color: Colors.white,
+                                                      fontWeight: FontWeight.w700,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            );
+                          });
+                        },
+                      );
                       if(result != null){
                         setState(() {
                           addTransaction(

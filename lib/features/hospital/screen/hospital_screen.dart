@@ -63,7 +63,7 @@ class _HospitalScreenState extends State<HospitalScreen> {
     final pdf = pw.Document();
     final font = await PdfGoogleFonts.nunitoRegular();
     
-    final headers = ['ID', 'Name', 'City'];
+    final headers = ['Kode Faskes', 'Nama Rumah Sakir', 'Kota'];
     final data = hospitals.map((hospital) {
       return [
         hospital.hospitalId?.toString() ?? '-',
