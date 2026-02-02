@@ -1,35 +1,37 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_expandable_fab/flutter_expandable_fab.dart';
 import 'package:hive/hive.dart';
+import 'package:intl/date_symbol_data_local.dart';
+import 'package:intl/intl.dart';
+import 'package:printing/printing.dart';
 import 'package:quickalert/quickalert.dart';
-import 'package:sistem_rs/features/master/model/hospital_model.dart';
+import 'package:sistem_rs/features/hospital/model/hospital_model.dart';
 import 'package:sistem_rs/features/master/model/room_model.dart';
-import 'package:sistem_rs/features/master/screen/create_room_screen.dart';
 import 'package:sistem_rs/manager/hive_db_helper.dart';
 import 'package:uuid/uuid.dart';
+import 'package:pdf/pdf.dart';
+import 'package:pdf/widgets.dart' as pw;
 
-class RoomScreen extends StatefulWidget {
-  final bool? isTransaction;
-  const RoomScreen({super.key, this.isTransaction});
+class CreateTransactionScreen extends StatefulWidget {
+  final String? hospitalId;
+  final List<Room>? allRoom;
+  const CreateTransactionScreen({super.key, this.hospitalId, this.allRoom});
 
   @override
-  State<RoomScreen> createState() => _RoomScreenState();
+  State<CreateTransactionScreen> createState() => _CreateTransactionScreenState();
 }
 
-class _RoomScreenState extends State<RoomScreen> {
+class _CreateTransactionScreenState extends State<CreateTransactionScreen> {
 
-  final _key = Key("floatingKey");
-
-  List<Room> allRoom = [];
   List<Room> filteredRoom = [];
-  
   List<Hospital> allHospitals = [];
-  String? selectedHospitalId;
 
   TextEditingController searchController = TextEditingController();
 
   TextEditingController roomCountController = TextEditingController();
   TextEditingController bedCountController = TextEditingController();
+  TextEditingController findingsController = TextEditingController();
+
+  TextEditingController dateController = TextEditingController();
 
   void readHospitalData() {
     var box = Hive.box(HiveDbServices.boxHospital);
@@ -37,76 +39,190 @@ class _RoomScreenState extends State<RoomScreen> {
     allHospitals = List.from(rawList).map((item) {
       return Hospital.fromJson(Map<String, dynamic>.from(item));
     }).toList();
-
-    readRoomData();
   }
 
-  List<Hospital> searchHospitalsByCity(String search) {
-    return allHospitals.where((item) {
-      final hospitalCity = item.hospitalCity?.toString().toLowerCase() ?? '';
-      final searchLower = search.toLowerCase();
-    
-      return hospitalCity.contains(searchLower);
-    }).toList();
-  }
-
-  void readRoomData() {
-    var box = Hive.box(HiveDbServices.boxRoom);
-    List<dynamic> rawList = box.get(HiveDbServices.boxRoom, defaultValue: []);
-
-    allRoom = List.from(rawList).map((item) {
-      return Room.fromJson(Map<String, dynamic>.from(item));
-    }).toList();
-
-    allRoom.sort((a, b) {
-      int cmp = a.hospitalId!.compareTo(b.hospitalId!);
-      return cmp != 0 ? cmp : a.roomId!.compareTo(b.roomId!);
-    });
-
-    filteredRoom = allRoom;
-  }
-
-  List<Room> searchRoomByHospitalAndName(String search, String? hospitalId) {
-    if(hospitalId != null && hospitalId.isNotEmpty){
-
-      filteredRoom = allRoom.where((room) {
-        final isSameHospital = room.hospitalId == hospitalId;
+  List<Room> searchRoomByName(String search) {
+    if(search.isEmpty){
+      filteredRoom = widget.allRoom!.where((room) => room.hospitalId == widget.hospitalId).toList();
+    } else {
+      filteredRoom = widget.allRoom!.where((room) {
+        final isSameHospital = room.hospitalId == widget.hospitalId;
         final nameMatches = room.roomName?.toLowerCase().contains(search.toLowerCase()) ?? false;
 
         return isSameHospital && nameMatches;
       }).toList();
-
-      return filteredRoom;
-    } else {
-      filteredRoom =  allRoom.where((room) { 
-        return room.roomName?.toLowerCase().contains(search.toLowerCase()) ?? false;
-      }).toList();
-
-      return filteredRoom;
     }
+  
+    return filteredRoom;
   }
   
-  Future<void> addTransaction(String roomCount, String bedCount) async {
+  Future<void> addTransaction({
+    required String roomCount,
+    required String bedCount,
+    required String hospitalId,
+    required String hospitalName,
+    required String roomId,
+    required String roomName,
+    required String roomClass,
+    required String findings,
+    }) async {
     final box = await Hive.openBox(HiveDbServices.boxTransaction);
     final List<dynamic> currentList = box.get(HiveDbServices.boxTransaction, defaultValue: []);
 
     var uuid = Uuid();
     String transactionId = uuid.v4();
 
+    currentList.removeWhere((item){
+      return item['room_id'] == roomId;
+    });
+
     final newTransaction = {
       "transaction_id": transactionId,
+      "transaction_date": DateFormat("yyyy-MM-dd").format(DateTime.now()),
       "room_count": roomCount,
-      "bed_count": bedCount
+      "bed_count": bedCount,
+      "hospital_name": hospitalName,
+      "room_id": roomId,
+      "room_name": roomName,
+      "room_class": roomClass,
+      "hospital_id": hospitalId,
+      "findings": findings,
     };
     final  updatedList = List<dynamic>.from(currentList);
     updatedList.add(newTransaction);
     await box.put(HiveDbServices.boxTransaction, updatedList);
     successPopup("Berhasil menyimpan data");
+    setState(() {
+      roomCountController.clear();
+      bedCountController.clear();
+      findingsController.clear();
+    });
+  }
+
+  Future<void> generateFilteredPdf() async {
+    final box = await Hive.openBox(HiveDbServices.boxTransaction);
+    final List<dynamic> rawData = box.get(HiveDbServices.boxTransaction, defaultValue: []);
+    String hospitalId = "";
+    String hospitalName = "";
+
+    if(rawData.isEmpty){
+      if(mounted){
+        QuickAlert.show(
+          context: context,
+          type: QuickAlertType.warning,
+          text: "Tidak ada transaksi pada $hospitalName bulan ini",
+          showCancelBtn: false,
+          confirmBtnText: "Ok",
+          onConfirmBtnTap: (){
+            int count = 0;
+            Navigator.of(context, rootNavigator: true).popUntil((_) => count++ >= 1);
+          }
+        );
+      }
+    } else {
+      final pdf = pw.Document();
+      final font = await PdfGoogleFonts.nunitoRegular();
+
+      final filteredData = rawData.where((item) {
+        return item['hospital_id'] == widget.hospitalId;
+      }).toList();
+
+      if(filteredData.isEmpty){
+        if(mounted){
+          QuickAlert.show(
+            context: context,
+            type: QuickAlertType.warning,
+            text: "Tidak ada transaksi pada $hospitalName bulan ini",
+            showCancelBtn: false,
+            confirmBtnText: "Ok",
+            onConfirmBtnTap: (){
+              int count = 0;
+              Navigator.of(context, rootNavigator: true).popUntil((_) => count++ >= 1);
+            }
+          );
+        }
+      } else {
+        filteredData.sort((a, b) {
+          int cmp = (a['hospital_name'] ?? '').compareTo(b['hospital_name'] ?? '');
+          if (cmp != 0) return cmp;
+          return (a['room_name'] ?? '').compareTo(b['room_name'] ?? '');
+        });
+
+        List<List<String>> tableData = [];
+
+        for (var item in filteredData) {
+          hospitalName = item['hospital_name'] ?? '';
+          hospitalId = item['hospital_id']?.toString() ?? '';
+          final String roomName = item['room_name'] ?? '-';
+          final String roomClass = item['room_class'] ?? '-';
+          final String findings = item['findings'] ?? '-';
+          
+          final int roomCount = int.tryParse(item['room_count'].toString()) ?? 0;
+          final int bedsCount = int.tryParse(item['bed_count'].toString()) ?? 0;
+
+          final int totalBeds = roomCount * bedsCount;
+
+
+          tableData.add([
+            roomName,
+            roomClass,
+            roomCount.toString(),
+            bedsCount.toString(),
+            totalBeds.toString(),
+            findings
+          ]);
+        }
+
+        pdf.addPage(
+          pw.MultiPage(
+            pageFormat: PdfPageFormat.a4.landscape,
+            build: (pw.Context context) {
+              return [
+                pw.Column(
+                  crossAxisAlignment: pw.CrossAxisAlignment.start,
+                  children: [
+                    pw.Text("Laporan Pra-Rekredensialing", style: pw.TextStyle(font: font, fontSize: 20, fontWeight: pw.FontWeight.bold)),
+                    pw.Text("Tanggal : ${DateFormat("d MMMM yyyy", "id_ID").format(DateTime.now())}", style: pw.TextStyle(font: font, fontSize: 12)),
+                    pw.Text("$hospitalId - $hospitalName", style: pw.TextStyle(font: font, fontSize: 12)),
+                    pw.SizedBox(height: 20),
+                  ]
+                ),
+                
+                pw.TableHelper.fromTextArray(
+                  context: context,
+                  border: pw.TableBorder.all(color: PdfColors.black, width: 0.5),
+                  headers: [
+                    'Nama Ruangan',
+                    'Kelas Ruangan',
+                    'Jumlah Ruangan',
+                    'Tempat Tidur\nPer Ruangan',
+                    'Total Tempat Tidur',
+                    'Temuan'
+                  ],
+                  data: tableData,
+                  headerStyle: pw.TextStyle(fontWeight: pw.FontWeight.bold, font: font, fontSize: 10),
+                  cellStyle: pw.TextStyle(font: font, fontSize: 10),
+                  headerDecoration: const pw.BoxDecoration(color: PdfColors.grey300),
+                  cellAlignment: pw.Alignment.center,
+                  cellPadding: pw.EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                  headerPadding: pw.EdgeInsets.symmetric(vertical: 5, horizontal: 10)
+                ),
+              ];
+            },
+          ),
+        );
+
+        await Printing.layoutPdf(onLayout: (format) => pdf.save());
+      }
+
+    }
   }
 
   @override
   void initState() {
+    filteredRoom = widget.allRoom!.where((room) => room.hospitalId == widget.hospitalId).toList();
     readHospitalData();
+    initializeDateFormatting('id_ID', null);
     super.initState();
   }
 
@@ -119,6 +235,14 @@ class _RoomScreenState extends State<RoomScreen> {
         title: Text("Daftar Ruangan", textScaler: TextScaler.noScaling,),
         scrolledUnderElevation: 0,
         backgroundColor: Colors.white,
+        actions: [
+          IconButton(
+            onPressed: () {
+              generateFilteredPdf();
+            },
+            icon: Icon(Icons.file_download_outlined)
+          )
+        ],
       ),
       body: Container(
         padding: EdgeInsets.symmetric(horizontal: 20),
@@ -127,41 +251,13 @@ class _RoomScreenState extends State<RoomScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: 10),
-            DropdownButtonFormField(
-              onChanged: (value){
-                setState(() {
-                  if(value!=null){
-                    selectedHospitalId = value;
-                    searchRoomByHospitalAndName(searchController.text, selectedHospitalId);
-                  }
-                });
-              },
-              items: allHospitals.map((item) => DropdownMenuItem(value: item.hospitalId, child: Text(item.hospitalName ?? "", textScaler: TextScaler.noScaling,))).toList(),
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: Colors.white,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(8),
-                  borderSide: BorderSide(color: Colors.black26, width: 1.5)
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(8),
-                  borderSide: BorderSide(color: Colors.black26, width: 1.5)
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(8),
-                  borderSide: BorderSide(color: Colors.black26, width: 1.5)
-                ),
-              ),
-            ),
-            SizedBox(height: 10),
             Container(
               margin: EdgeInsets.symmetric(vertical: 10),
               child: TextFormField(
                 controller: searchController,
                 onChanged: (value) {
                   setState(() {
-                    value.isEmpty ? filteredRoom = searchRoomByHospitalAndName(searchController.text, selectedHospitalId) : null;
+                    value.isEmpty ? filteredRoom = searchRoomByName(searchController.text) : null;
                   });
                 },
                 decoration: InputDecoration(
@@ -169,7 +265,7 @@ class _RoomScreenState extends State<RoomScreen> {
                   suffixIcon: IconButton(
                     onPressed: (){
                       setState(() {
-                        filteredRoom = searchRoomByHospitalAndName(searchController.text, selectedHospitalId);
+                        filteredRoom = searchRoomByName(searchController.text);
                       });
                     },
                     icon: Icon(Icons.search),
@@ -191,7 +287,7 @@ class _RoomScreenState extends State<RoomScreen> {
                 ),
               ),
             ),
-            (selectedHospitalId == null || selectedHospitalId!.isEmpty) && widget.isTransaction != null ? Expanded(child: Center(child: Text("Silakan pilih rumah sakit"))) :  filteredRoom.isEmpty ? Expanded(child: Center(child: Text("Data tidak ditemukan"))) : Expanded(
+            filteredRoom.isEmpty ? Expanded(child: Center(child: Text("Data tidak ditemukan"))) : Expanded(
               child: ListView.builder(
                 itemCount: filteredRoom.length,
                 itemBuilder: (context, index){
@@ -206,9 +302,7 @@ class _RoomScreenState extends State<RoomScreen> {
                     splashColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () async {
-                      if(widget.isTransaction != null){
-                        // Navigator.push(context, MaterialPageRoute(builder: (context) => CreateTransactionScreen()));
-                        var result = await showDialog(
+                      var result = await showDialog(
                           context: context,
                           barrierDismissible: false,
                           builder: (context) {
@@ -244,7 +338,7 @@ class _RoomScreenState extends State<RoomScreen> {
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
-                                        Text("Transaksi ${item.roomName}", textScaler: TextScaler.noScaling,),
+                                        Text("Ruangan ${item.roomName}", textScaler: TextScaler.noScaling,),
                                         Icon(
                                           Icons.close_rounded,
                                           color: Colors.white,
@@ -254,7 +348,7 @@ class _RoomScreenState extends State<RoomScreen> {
                                   ),
                                 ),
                                 content: Container(
-                                  height: 250,
+                                  height: 380,
                                   color: Colors.white,
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -288,6 +382,29 @@ class _RoomScreenState extends State<RoomScreen> {
                                         controller: bedCountController,
                                         decoration: InputDecoration(
                                           hint: Text("Masukkan jumlah tempat tidur", textScaler: TextScaler.noScaling,),
+                                          filled: true,
+                                          fillColor: Colors.white,
+                                          border: OutlineInputBorder(
+                                            borderRadius: BorderRadius.circular(8),
+                                            borderSide: BorderSide(color: Colors.black26, width: 1.5)
+                                          ),
+                                          enabledBorder: OutlineInputBorder(
+                                            borderRadius: BorderRadius.circular(8),
+                                            borderSide: BorderSide(color: Colors.black26, width: 1.5)
+                                          ),
+                                          focusedBorder: OutlineInputBorder(
+                                            borderRadius: BorderRadius.circular(8),
+                                            borderSide: BorderSide(color: Colors.black26, width: 1.5)
+                                          ),
+                                        ),
+                                      ),
+                                      SizedBox(height: 20),
+                                      Text("Temuan", textScaler: TextScaler.noScaling,),
+                                      SizedBox(height: 10),
+                                      TextFormField(
+                                        controller: findingsController,
+                                        decoration: InputDecoration(
+                                          hint: Text("Masukkan temuan", textScaler: TextScaler.noScaling,),
                                           filled: true,
                                           fillColor: Colors.white,
                                           border: OutlineInputBorder(
@@ -374,16 +491,18 @@ class _RoomScreenState extends State<RoomScreen> {
                             });
                           },
                         );
-                        if(result != null){
-                          setState(() {
-                            addTransaction(roomCountController.text, bedCountController.text);
-                          });
-                        }           
-                      } else {
-                        await Navigator.push(context, MaterialPageRoute(builder: (context) => CreateRoomScreen(data: item)));
+                      if(result != null){
                         setState(() {
-                          readRoomData();
-                          searchController.clear();
+                          addTransaction(
+                            roomCount : roomCountController.text,
+                            bedCount: bedCountController.text,
+                            hospitalName: hospitalName,
+                            hospitalId: item.hospitalId ?? "",
+                            roomId: item.roomId ?? "",
+                            roomName: item.roomName ?? "",
+                            roomClass: item.roomClass ?? "",
+                            findings: findingsController.text,
+                          );
                         });
                       }
                     },
@@ -419,55 +538,9 @@ class _RoomScreenState extends State<RoomScreen> {
           ],
         ),
       ),
-      floatingActionButton: ExpandableFab(
-        key: _key,
-        type: ExpandableFabType.up,
-        distance: 70,
-        openButtonBuilder: RotateFloatingActionButtonBuilder(
-          child: const Icon(Icons.menu_rounded, color: Colors.white),
-          fabSize: ExpandableFabSize.regular,
-          shape: const CircleBorder(),
-          backgroundColor: Color(0XFF2A4491),
-          foregroundColor: Colors.black
-        ),
-        closeButtonBuilder: RotateFloatingActionButtonBuilder(
-          child: const Icon(Icons.close_rounded, color: Colors.white),
-          fabSize: ExpandableFabSize.regular,
-          shape: const CircleBorder(),
-          backgroundColor: Color(0XFF2A4491),
-          foregroundColor: Colors.black
-        ),
-        children: [
-          FloatingActionButton(
-            heroTag: null,
-            onPressed: () async {
-              await Navigator.push(context, MaterialPageRoute(builder: (context) => CreateRoomScreen()));
-              setState(() {
-                readRoomData();
-              });
-            },
-            shape: const CircleBorder(),
-            backgroundColor: Color(0XFF2A4491),
-            foregroundColor: Color(0XFF2A4491),
-            child: Icon(Icons.add_rounded, color: Colors.white,),
-          ),
-          FloatingActionButton(
-            heroTag: null,
-            onPressed: (){
-              // downloadReport();
-            },
-            shape: const CircleBorder(),
-            backgroundColor: Color(0XFF2A4491),
-            foregroundColor: Color(0XFF2A4491),
-            child: Icon(Icons.file_download_outlined, color: Colors.white,),
-          ),
-        ],
-      ),
-      floatingActionButtonLocation: ExpandableFab.location,
     );
   }
   
-
   Future<dynamic> successPopup(String text){
     return QuickAlert.show(
       context: context,

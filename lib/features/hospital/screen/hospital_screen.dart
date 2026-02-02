@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_expandable_fab/flutter_expandable_fab.dart';
 import 'package:hive/hive.dart';
-import 'package:sistem_rs/features/master/model/hospital_model.dart';
-import 'package:sistem_rs/features/master/screen/create_hospital_screen.dart';
+import 'package:sistem_rs/features/hospital/model/hospital_model.dart';
+import 'package:sistem_rs/features/hospital/screen/create_hospital_screen.dart';
 import 'package:sistem_rs/manager/hive_db_helper.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;

@@ -6,10 +6,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:sistem_rs/features/master/model/hospital_model.dart';
+import 'package:sistem_rs/features/hospital/model/hospital_model.dart';
 import 'package:sistem_rs/features/master/model/room_model.dart';
-import 'package:sistem_rs/features/master/screen/hospital_screen.dart';
-import 'package:sistem_rs/features/master/screen/room_screen.dart';
+import 'package:sistem_rs/features/hospital/screen/hospital_screen.dart';
+import 'package:sistem_rs/features/room/screen/room_screen.dart';
+import 'package:sistem_rs/features/transaction/screen/transaction_screen.dart';
 import 'package:sistem_rs/manager/hive_db_helper.dart';
 import 'package:sistem_rs/splash_screen.dart';
 
@@ -41,6 +42,17 @@ void main() async {
       }
     }
   }
+
+  final transaction = await Hive.openBox(HiveDbServices.boxTransaction);
+  List<dynamic> rawList = transaction.get(HiveDbServices.boxTransaction, defaultValue: []);
+  List<Map<dynamic, dynamic>> allTransactions = rawList.map((e) => Map<dynamic, dynamic>.from(e)).toList();
+  DateTime now = DateTime.now();
+  String currentMonthYear = "${now.year}-${now.month.toString().padLeft(2, '0')}";
+  List<Map<dynamic, dynamic>> keptTransactions = allTransactions.where((item) {
+    String tDate = item['transaction_date'] ?? '';
+    return tDate.startsWith(currentMonthYear);
+  }).toList();
+  await transaction.put(HiveDbServices.boxTransaction, keptTransactions);
   runApp(const MyApp());
 }
 
@@ -77,11 +89,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   List<Hospital> allHospitals = [];
   List<Room> allRoom = [];
-
-  List<HospitalRoomCount> roomPerHospital = [];
-  List<HospitalRoomCount> roomCilacap = [];
-  List<HospitalRoomCount> roomBanyumas = [];
-  List<HospitalRoomCount> roomPurbalingga = [];
   
   void readHospitalData() {
     var box = Hive.box(HiveDbServices.boxHospital);
@@ -140,36 +147,6 @@ class _MyHomePageState extends State<MyHomePage> {
         name: "$city ($title)",
       ));
     }); 
-    readRoomData();
-  }
-  
-  void readRoomData() {
-    var box = Hive.box(HiveDbServices.boxRoom);
-    List<dynamic> rawList = box.get(HiveDbServices.boxRoom, defaultValue: []);
-
-    allRoom = List.from(rawList).map((item) {
-      return Room.fromJson(Map<String, dynamic>.from(item));
-    }).toList();
-
-    allRoom.sort((a, b) {
-      int cmp = a.hospitalId!.compareTo(b.hospitalId!);
-      return cmp != 0 ? cmp : a.roomId!.compareTo(b.roomId!);
-    });
-    roomPerHospital = countRoomsPerHospital(allHospitals, allRoom);
-    for (var item in roomPerHospital) {
-      switch (item.city.toLowerCase()) {
-        case "cilacap":
-          roomCilacap.add(item);
-          break;
-        case "banyumas":
-          roomBanyumas.add(item);
-          break;
-        case "purbalingga":
-          roomPurbalingga.add(item);
-          break;
-        default:
-      }
-    }
   }
 
   Map<String, int> groupHospitalByCity(List<Hospital> hospitals) {
@@ -195,223 +172,150 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
-      length: 3,
-      child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          scrolledUnderElevation: 0,
-          title: Image.asset("assets/images/logo-text.png", width: MediaQuery.sizeOf(context).width / 2.5),
-          centerTitle: true,
-        ),
-        body: Scaffold(
-          backgroundColor: Colors.white,
-          body: SizedBox(
-            height: MediaQuery.sizeOf(context).height - kToolbarHeight,
-            child: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
-                      color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black12,
-                          offset: Offset(0, 1),
-                          blurRadius: 5,
-                          spreadRadius: 2,
-                        ),
-                      ],
-                    ),
-                    padding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-                    child: Column(
-                      children: [
-                        Text("Data Jumlah Rumah Sakit", style: TextStyle(fontWeight: FontWeight.w600),),
-                        SizedBox(height: 10),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Stack(
-                              alignment: Alignment.center,
-                              children: [
-                                SizedBox(
-                                  height: MediaQuery.sizeOf(context).width * 0.4,
-                                  width: MediaQuery.sizeOf(context).width * 0.4,
-                                  child: PieChart(
-                                    PieChartData(
-                                      sections: chartHospital,
-                                      centerSpaceColor: Colors.white,
-                                      startDegreeOffset: 90,
-                                      pieTouchData: PieTouchData(
-                                        enabled: false,
-                                      ),
-                        
-                                    ),
-                                    curve: Curves.easeInOut,
-                                    duration: Duration(milliseconds: 1000),
-                                  ),
-                                ),
-                                Column(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Text(
-                                        textScaler: TextScaler.noScaling,
-                                        "Total Rumah Sakit",
-                                        style: TextStyle(
-                                          fontSize: 11,
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.w600,
-                                          fontFamily: "Poppins",
-                                        ),
-                                      ),
-                                      Text(
-                                        textScaler: TextScaler.noScaling,
-                                        allHospitals.isNotEmpty ? allHospitals.length.toString() : "0",
-                                        style: TextStyle(
-                                          fontSize: 11,
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.w400,
-                                          fontFamily: "Poppins",
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                              ],
-                            ),
-                            SizedBox(width: 20),
-                            SizedBox(
-                              height: MediaQuery.sizeOf(context).width * 0.4,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: detail.map((item) {
-                                  return Container(
-                                    margin: EdgeInsets.only(bottom: 10),
-                                    child: SizedBox(
-                                      width: (MediaQuery.sizeOf(context).width * 0.5 - 40),
-                                      child : Row(
-                                        children: [
-                                          Container(
-                                            width: 20,
-                                            height: 20,
-                                            decoration: BoxDecoration(
-                                              color: Color(int.parse("0xFF${item.color}")),
-                                              borderRadius: BorderRadius.circular(10),
-                                            ),
-                                            margin: EdgeInsets.only(right: 10),
-                                          ),
-                                          Text(
-                                            textScaler: TextScaler.noScaling,
-                                            "${item.name}",
-                                            maxLines: 2,
-                                            overflow: TextOverflow.ellipsis,
-                                            style: TextStyle(
-                                              fontSize: 13,
-                                              color: Colors.black,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  );
-                                }).toList(),
-                              ),
-                            )
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 20,),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      InkWell(
-                        splashColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=> HospitalScreen()));
-                        },
-                        child: Container(
-                          height: 50,
-                          width: MediaQuery.sizeOf(context).width * 0.4,
-                          margin: EdgeInsets.only(left: 20),
-                          alignment: Alignment.center,
-                          padding: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(6),
-                            color: Colors.white,
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black12,
-                                offset: Offset(0, 1),
-                                blurRadius: 5,
-                                spreadRadius: 2,
-                              ),
-                            ],
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              SvgPicture.asset("assets/svg/hospital.svg", height: 30,),
-                              SizedBox(width: 5,),
-                              Text("Rumah Sakit", textScaler: TextScaler.noScaling,),
-                            ],
-                          ),
-                        ),
-                      ),
-                      InkWell(
-                        splashColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=> RoomScreen()));
-                        },
-                        child: Container(
-                          height: 50,
-                          width: MediaQuery.sizeOf(context).width * 0.4,
-                          margin: EdgeInsets.only(right: 20),
-                          alignment: Alignment.center,
-                          padding: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(6),
-                            color: Colors.white,
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black12,
-                                offset: Offset(0, 1),
-                                blurRadius: 5,
-                                spreadRadius: 2,
-                              ),
-                            ],
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              SvgPicture.asset("assets/svg/bedroom.svg", height: 30,),
-                              SizedBox(width: 5,),
-                              Text("Ruangan", textScaler: TextScaler.noScaling,),
-                            ],
-                          ),
-                        ),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        scrolledUnderElevation: 0,
+        title: Image.asset("assets/images/logo-text.png", width: MediaQuery.sizeOf(context).width / 2.5),
+        centerTitle: true,
+      ),
+      body: Scaffold(
+        backgroundColor: Colors.white,
+        body: SizedBox(
+          height: MediaQuery.sizeOf(context).height - kToolbarHeight,
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black12,
+                        offset: Offset(0, 1),
+                        blurRadius: 5,
+                        spreadRadius: 2,
                       ),
                     ],
                   ),
-                  InkWell(
-                    splashColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
-                    onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=> RoomScreen(isTransaction: true)));
-                    },
-                    child: Center(
+                  padding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                  child: Column(
+                    children: [
+                      Text("Data Jumlah Rumah Sakit", style: TextStyle(fontWeight: FontWeight.w600),),
+                      SizedBox(height: 10),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Stack(
+                            alignment: Alignment.center,
+                            children: [
+                              SizedBox(
+                                height: MediaQuery.sizeOf(context).width * 0.4,
+                                width: MediaQuery.sizeOf(context).width * 0.4,
+                                child: PieChart(
+                                  PieChartData(
+                                    sections: chartHospital,
+                                    centerSpaceColor: Colors.white,
+                                    startDegreeOffset: 90,
+                                    pieTouchData: PieTouchData(
+                                      enabled: false,
+                                    ),
+                      
+                                  ),
+                                  curve: Curves.easeInOut,
+                                  duration: Duration(milliseconds: 1000),
+                                ),
+                              ),
+                              Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Text(
+                                      textScaler: TextScaler.noScaling,
+                                      "Total Rumah Sakit",
+                                      style: TextStyle(
+                                        fontSize: 11,
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.w600,
+                                        fontFamily: "Poppins",
+                                      ),
+                                    ),
+                                    Text(
+                                      textScaler: TextScaler.noScaling,
+                                      allHospitals.isNotEmpty ? allHospitals.length.toString() : "0",
+                                      style: TextStyle(
+                                        fontSize: 11,
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.w400,
+                                        fontFamily: "Poppins",
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                            ],
+                          ),
+                          SizedBox(width: 20),
+                          SizedBox(
+                            height: MediaQuery.sizeOf(context).width * 0.4,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: detail.map((item) {
+                                return Container(
+                                  margin: EdgeInsets.only(bottom: 10),
+                                  child: SizedBox(
+                                    width: (MediaQuery.sizeOf(context).width * 0.5 - 40),
+                                    child : Row(
+                                      children: [
+                                        Container(
+                                          width: 20,
+                                          height: 20,
+                                          decoration: BoxDecoration(
+                                            color: Color(int.parse("0xFF${item.color}")),
+                                            borderRadius: BorderRadius.circular(10),
+                                          ),
+                                          margin: EdgeInsets.only(right: 10),
+                                        ),
+                                        Text(
+                                          textScaler: TextScaler.noScaling,
+                                          "${item.name}",
+                                          maxLines: 2,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: TextStyle(
+                                            fontSize: 13,
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w500,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                );
+                              }).toList(),
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 20,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    InkWell(
+                      splashColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> HospitalScreen()));
+                      },
                       child: Container(
                         height: 50,
-                        width: MediaQuery.sizeOf(context).width - 40,
+                        width: MediaQuery.sizeOf(context).width * 0.4,
+                        margin: EdgeInsets.only(left: 20),
                         alignment: Alignment.center,
                         padding: EdgeInsets.all(10),
-                        margin: EdgeInsets.only(top: 10),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(6),
                           color: Colors.white,
@@ -427,116 +331,91 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            SvgPicture.asset("assets/svg/bedroom-2.svg", height: 30,),
+                            SvgPicture.asset("assets/svg/hospital.svg", height: 30,),
                             SizedBox(width: 5,),
-                            Text("Ruangan & Tempat Tidur", textScaler: TextScaler.noScaling,),
+                            Text("Rumah Sakit", textScaler: TextScaler.noScaling,),
                           ],
                         ),
                       ),
                     ),
-                  ),
-                  SizedBox(height: 20,),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: Text("Ruangan Setiap Rumah Sakit", style: TextStyle(fontWeight: FontWeight.w500),),
-                  ),
-                  TabBar(
-                    labelColor: Color(0XFF2A4491),
-                    tabs: [
-                      Tab(text: "Cilacap"),
-                      Tab(text: "Banyumas"),
-                      Tab(text: "Purbalingga"),
-                    ],
-                    indicatorColor: Color(0XFF2A4491),
-                    unselectedLabelColor: Colors.black87,
-                    labelStyle: TextStyle(fontWeight: FontWeight.w500),
-                    unselectedLabelStyle: TextStyle(fontWeight: FontWeight.w400),
-                    textScaler: TextScaler.noScaling,
-                    dividerColor: Colors.transparent,
-                    splashFactory: NoSplash.splashFactory,
-                    overlayColor: WidgetStateProperty.all(Colors.transparent),
-                  ),
-                  SizedBox(
-                    height: 400,
-                    child: TabBarView(
-                      children: [
-                        roomCilacap.isNotEmpty ? roomWidget(roomCilacap) : Center(child: Text("Tidak ada data", textScaler: TextScaler.noScaling,),),
-                        roomBanyumas.isNotEmpty ? roomWidget(roomBanyumas) : Center(child: Text("Tidak ada data", textScaler: TextScaler.noScaling,),),
-                        roomPurbalingga.isNotEmpty ? roomWidget(roomPurbalingga) : Center(child: Text("Tidak ada data", textScaler: TextScaler.noScaling,),),
-                      ]
+                    InkWell(
+                      splashColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> RoomScreen()));
+                      },
+                      child: Container(
+                        height: 50,
+                        width: MediaQuery.sizeOf(context).width * 0.4,
+                        margin: EdgeInsets.only(right: 20),
+                        alignment: Alignment.center,
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(6),
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black12,
+                              offset: Offset(0, 1),
+                              blurRadius: 5,
+                              spreadRadius: 2,
+                            ),
+                          ],
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            SvgPicture.asset("assets/svg/bedroom.svg", height: 30,),
+                            SizedBox(width: 5,),
+                            Text("Ruangan", textScaler: TextScaler.noScaling,),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                InkWell(
+                  splashColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> TransactionScreen()));
+                  },
+                  child: Center(
+                    child: Container(
+                      height: 50,
+                      width: MediaQuery.sizeOf(context).width - 40,
+                      alignment: Alignment.center,
+                      padding: EdgeInsets.all(10),
+                      margin: EdgeInsets.only(top: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(6),
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black12,
+                            offset: Offset(0, 1),
+                            blurRadius: 5,
+                            spreadRadius: 2,
+                          ),
+                        ],
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SvgPicture.asset("assets/svg/bedroom-2.svg", height: 30,),
+                          SizedBox(width: 5,),
+                          Text("Ruangan & Tempat Tidur", textScaler: TextScaler.noScaling,),
+                        ],
+                      ),
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ),
       ),
     );
-  }
-
-  Widget roomWidget(List<HospitalRoomCount> data){
-    return Container(
-      margin: EdgeInsets.symmetric(vertical: 15),
-      child: ListView.builder(
-        itemCount: data.length,
-        itemBuilder: (context, index) {
-          var item = data[index];
-          return Container(
-            margin: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
-            padding: EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(6),
-              color: Colors.white,
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black12,
-                  offset: Offset(0, 1),
-                  blurRadius: 5,
-                  spreadRadius: 2,
-                ),
-              ],
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(item.id, textScaler: TextScaler.noScaling, style: TextStyle(fontSize: 12, color: Colors.black54),),
-                Text(item.name, textScaler: TextScaler.noScaling,),
-                Text("Jumlah Ruangan : ${item.totalRoom}", textScaler: TextScaler.noScaling, style: TextStyle(fontWeight: FontWeight.w500),),
-              ],
-            ),
-          );
-        },
-      ),
-    );
-  }
-  
-  List<HospitalRoomCount> countRoomsPerHospital(
-    List<Hospital> allHospitals, 
-    List<Room> allRooms
-  ) {
-    Map<String, int> roomCounts = {};
-
-    for (var room in allRooms) {
-      String hospitalId = room.hospitalId!;
-      roomCounts[hospitalId] = (roomCounts[hospitalId] ?? 0) + 1;
-    }
-
-    List<HospitalRoomCount> results = [];
-
-    for (var hospital in allHospitals) {
-      String hospitalId = hospital.hospitalId!;
-      int count = roomCounts[hospitalId] ?? 0;
-
-      results.add(HospitalRoomCount(
-        id: hospitalId,
-        name: hospital.hospitalName!,
-        city: hospital.hospitalCity!,
-        totalRoom: count,
-      ));
-    }
-
-    return results;
   }
 }
 
@@ -549,19 +428,5 @@ class ChartDetail {
     this.color,
     this.name,
     this.total,
-  });
-}
-
-class HospitalRoomCount {
-  final String id;
-  final String name;
-  final String city;
-  final int totalRoom;
-
-  HospitalRoomCount({
-    required this.id, 
-    required this.name, 
-    required this.city, 
-    required this.totalRoom
   });
 }

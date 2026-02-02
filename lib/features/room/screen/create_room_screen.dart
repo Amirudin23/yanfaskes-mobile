@@ -1,100 +1,139 @@
 import 'package:hive/hive.dart';
 import 'package:flutter/material.dart';
 import 'package:quickalert/quickalert.dart';
-import 'package:sistem_rs/features/master/model/hospital_model.dart';
+import 'package:sistem_rs/features/hospital/model/hospital_model.dart';
+import 'package:sistem_rs/features/master/model/room_model.dart';
 import 'package:sistem_rs/manager/hive_db_helper.dart';
 
-class CreateHospitalScreen extends StatefulWidget {
-  final Hospital? data;
-  const CreateHospitalScreen({super.key, this.data});
+class CreateRoomScreen extends StatefulWidget {
+  final Room? data;
+  const CreateRoomScreen({super.key, this.data});
 
   @override
-  State<CreateHospitalScreen> createState() => _CreateHospitalScreenState();
+  State<CreateRoomScreen> createState() => _CreateRoomScreenState();
 }
 
-class _CreateHospitalScreenState extends State<CreateHospitalScreen> {
+class _CreateRoomScreenState extends State<CreateRoomScreen> {
 
-  @override
-  void initState() {
-    super.initState();
+  TextEditingController roomNameController = TextEditingController();
+  TextEditingController roomClassController = TextEditingController();
+  String? selectedHospitalId;
+  List<Hospital> allHospitals = [];
+
+  
+  void readHospitalData() {
+    var box = Hive.box(HiveDbServices.boxHospital);
+    List<dynamic> rawList = box.get(HiveDbServices.boxHospital, defaultValue: []);
+    allHospitals = List.from(rawList).map((item) {
+      return Hospital.fromJson(Map<String, dynamic>.from(item));
+    }).toList();
+
     if(widget.data != null){
-      hospitalIdController.text = widget.data?.hospitalId ?? "";
-      hospitalNameController.text = widget.data?.hospitalName ?? "";
-      selectedHospitalCity = widget.data?.hospitalCity ?? "";
+      roomNameController.text = widget.data?.roomName ?? "";
+      roomClassController.text = widget.data?.roomClass ?? "";
+      selectedHospitalId = widget.data?.hospitalId ?? "";
     }
-  }    
+  }
 
-  TextEditingController hospitalNameController = TextEditingController();
-  TextEditingController hospitalIdController = TextEditingController();
-  String? selectedHospitalCity;
+  Future<void> addRoom(RoomData data) async {
+    final box = await Hive.openBox(HiveDbServices.boxRoom);
+    List<dynamic> rawList = box.get(HiveDbServices.boxRoom, defaultValue: []);
+    List<Map<dynamic, dynamic>> allRooms = List<Map<dynamic, dynamic>>.from(rawList);
 
-  Future<void> addHospital(HospitalData hospital) async {
-    final box = await Hive.openBox(HiveDbServices.boxHospital);
-    final List<dynamic> currentList = box.get(HiveDbServices.boxHospital, defaultValue: []);
-    final newHospital = {
-      "hospital_id": hospital.hospitalId,
-      "hospital_name": hospital.hospitalName,
-      "hospital_city": hospital.hospitalCity
+    int maxSequence = 0;
+
+    for (var room in allRooms) {
+      String currentId = room['room_id'] ?? '';
+      String currentHospitalId = room['hospital_id'] ?? '';
+
+      if (currentHospitalId == data.hospitalId) {
+        List<String> parts = currentId.split('-');
+        
+        if (parts.length == 2) {
+          int? seq = int.tryParse(parts[1]);
+          if (seq != null && seq > maxSequence) {
+            maxSequence = seq;
+          }
+        }
+      }
+    }
+
+    int newSequence = maxSequence + 1;
+    String sequenceString = newSequence.toString().padLeft(2, '0');
+    String newRoomId = "${data.hospitalId}-$sequenceString";
+
+    final newRoom = {
+      "room_id": newRoomId,
+      "hospital_id": data.hospitalId,
+      "room_name": data.roomName,
+      "room_class": data.roomClass,
     };
-    final  updatedList = List<dynamic>.from(currentList);
-    updatedList.add(newHospital);
-    await box.put(HiveDbServices.boxHospital, updatedList);
+
+    allRooms.add(newRoom);
+    await box.put(HiveDbServices.boxRoom, allRooms);
     successPopup("Berhasil menyimpan data");
   }
   
-  Future<void> deleteHospital(String id) async {
-    final box = await Hive.openBox(HiveDbServices.boxHospital);
-    final List<dynamic> currentList = box.get(HiveDbServices.boxHospital, defaultValue: []);
-
-    final updatedList = currentList.where((hospital) {
-      return hospital['hospital_id'] != id;
-    }).toList();
-
-    if (currentList.length != updatedList.length) {
-      await box.put(HiveDbServices.boxHospital, updatedList);
-      successPopup("Berhasil menghapus data");
-    } else {
-      failurePopup("Gagal menghapus data");
-    }
-  }
-
-  Future<void> updateHospital(HospitalData data) async {
-    final box = await Hive.openBox(HiveDbServices.boxHospital);
-    final List<dynamic> currentList = box.get(HiveDbServices.boxHospital, defaultValue: []);
-    final index = currentList.indexWhere((hospital) => hospital['hospital_id'] == data.hospitalId);
+  Future<void> updateRoom(RoomData data) async {
+    final box = await Hive.openBox(HiveDbServices.boxRoom);
+    final List<dynamic> currentList = box.get(HiveDbServices.boxRoom, defaultValue: []);
+    final index = currentList.indexWhere((room) => room['room_id'] == widget.data?.roomId);
 
     if (index != -1) {
       final Map<dynamic, dynamic> oldData = currentList[index];
 
-      final updatedHospital = {
-        'hospital_id': data.hospitalId,
-        'hospital_name': data.hospitalName ?? oldData['hospital_name'],
-        'hospital_city': data.hospitalCity ?? oldData['hospital_city'],
+      final updatedRoom = {
+        'room_id' : widget.data?.roomId ?? "",
+        'room_name': data.roomName ?? oldData['room_name'],
+        'room_class': data.roomClass ?? oldData['room_city'],
+        'hospital_id': data.hospitalId ?? oldData['hospital_id'],
       };
 
       final updatedList = List<dynamic>.from(currentList);
-      updatedList[index] = updatedHospital;
+      updatedList[index] = updatedRoom;
 
-      await box.put(HiveDbServices.boxHospital, updatedList);
+      await box.put(HiveDbServices.boxRoom, updatedList);
       successPopup("Berhasil mengubah data");
     } else {
       failurePopup("Gagal mengubah data");
     }
   }
   
+  Future<void> deleteRoom(String id) async {
+    final box = await Hive.openBox(HiveDbServices.boxRoom);
+    final List<dynamic> currentList = box.get(HiveDbServices.boxRoom, defaultValue: []);
+
+    final updatedList = currentList.where((room) {
+      return room['room_id'] != id;
+    }).toList();
+
+    if (currentList.length != updatedList.length) {
+      await box.put(HiveDbServices.boxRoom, updatedList);
+      successPopup("Berhasil menghapus data");
+    } else {
+      failurePopup("Gagal menghapus data");
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    readHospitalData();
+  }
+
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("Tambah Rumah Sakit", textScaler: TextScaler.noScaling,),
+        title: Text("Tambah Ruangan", textScaler: TextScaler.noScaling,),
         scrolledUnderElevation: 0,
         backgroundColor: Colors.white,
         actions: [
           widget.data !=null ? IconButton(
             onPressed: () async {
-              await deleteHospital(widget.data?.hospitalId ?? "");
+              await deleteRoom(widget.data?.roomId ?? "");
             },
             icon: Icon(Icons.delete_forever_rounded)
           ) : Container()
@@ -107,13 +146,12 @@ class _CreateHospitalScreenState extends State<CreateHospitalScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Kode Faskes", textScaler: TextScaler.noScaling,),
+              Text("Nama Ruangan", textScaler: TextScaler.noScaling,),
               SizedBox(height: 10),
               TextFormField(
-                controller: hospitalIdController,
-                enabled: widget.data != null ? false : true,
+                controller: roomNameController,
                 decoration: InputDecoration(
-                  hint: Text("Masukkan kode faskes", textScaler: TextScaler.noScaling,),
+                  hint: Text("Masukkan nama ruangan", textScaler: TextScaler.noScaling,),
                   filled: true,
                   fillColor: Colors.white,
                   border: OutlineInputBorder(
@@ -131,12 +169,12 @@ class _CreateHospitalScreenState extends State<CreateHospitalScreen> {
                 ),
               ),
               SizedBox(height: 20),
-              Text("Nama Rumah Sakit", textScaler: TextScaler.noScaling,),
+              Text("Kelas", textScaler: TextScaler.noScaling,),
               SizedBox(height: 10),
               TextFormField(
-                controller: hospitalNameController,
+                controller: roomClassController,
                 decoration: InputDecoration(
-                  hint: Text("Masukkan nama rumah sakit", textScaler: TextScaler.noScaling,),
+                  hint: Text("Masukkan kelas ruangan", textScaler: TextScaler.noScaling,),
                   filled: true,
                   fillColor: Colors.white,
                   border: OutlineInputBorder(
@@ -154,19 +192,18 @@ class _CreateHospitalScreenState extends State<CreateHospitalScreen> {
                 ),
               ),
               SizedBox(height: 20),
-              Text("Kota Rumah Sakit", textScaler: TextScaler.noScaling,),
+              Text("Rumah Sakit", textScaler: TextScaler.noScaling,),
               SizedBox(height: 10),
               DropdownButtonFormField(
                 onChanged: (value){
                   setState(() {
                     if(value!=null){
-                      selectedHospitalCity = value;
+                      selectedHospitalId = value;
                     }  
                   });
                 },
-                padding: EdgeInsets.symmetric(horizontal: 20),
-                initialValue: selectedHospitalCity,
-                items: ["Cilacap", "Banyumas", "Purbalingga"].map((item) => DropdownMenuItem(value: item, child: Text(item, textScaler: TextScaler.noScaling,))).toList(),
+                items: allHospitals.map((item) => DropdownMenuItem(value: item.hospitalId, child: Text(item.hospitalName ?? "", textScaler: TextScaler.noScaling,))).toList(),
+                initialValue: selectedHospitalId,
                 decoration: InputDecoration(
                   filled: true,
                   fillColor: Colors.white,
@@ -190,12 +227,12 @@ class _CreateHospitalScreenState extends State<CreateHospitalScreen> {
                 height: 40,
                 child: ElevatedButton(
                   onPressed: () async {
-                    final hospital = HospitalData(
-                      hospitalId: hospitalIdController.text,
-                      hospitalName: hospitalNameController.text,
-                      hospitalCity: selectedHospitalCity,
+                    final room = RoomData(
+                      hospitalId: selectedHospitalId,
+                      roomName: roomNameController.text,
+                      roomClass: roomClassController.text,
                     );
-                    widget.data != null ? await updateHospital(hospital) : await addHospital(hospital);
+                    widget.data != null ? await updateRoom(room) : await addRoom(room);
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0XFF2A4491),
@@ -211,10 +248,10 @@ class _CreateHospitalScreenState extends State<CreateHospitalScreen> {
                     overlayColor: WidgetStateProperty.all(Colors.transparent),
                   ),
                   child: Text(
-                   widget.data != null ? "Ubah" : "Simpan",
-                   textScaler: TextScaler.noScaling,
+                    widget.data != null ? "Ubah" : "Simpan",
+                    textScaler: TextScaler.noScaling,
                     style: TextStyle(
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w600,
                       fontSize: 16,
                       fontFamily: "Poppins",
                     ),
@@ -227,7 +264,7 @@ class _CreateHospitalScreenState extends State<CreateHospitalScreen> {
       ),
     );
   }
-
+  
   Future<dynamic> successPopup(String text){
     return QuickAlert.show(
       context: context,
@@ -257,14 +294,16 @@ class _CreateHospitalScreenState extends State<CreateHospitalScreen> {
   }
 }
 
-class HospitalData {
+class RoomData {
   String? hospitalId;
-  String? hospitalName;
-  String? hospitalCity;
+  String? roomId;
+  String? roomName;
+  String? roomClass;
 
-  HospitalData({
+  RoomData({
     this.hospitalId,
-    this.hospitalName,
-    this.hospitalCity,
+    this.roomId,
+    this.roomName,
+    this.roomClass,
   });
 }
