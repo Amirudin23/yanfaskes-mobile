@@ -62,13 +62,15 @@ class _RoomScreenState extends State<RoomScreen> {
 
     final pdf = pw.Document();
     final font = await PdfGoogleFonts.nunitoRegular();
+
+    List<Room> filteredRoom = room.where((item)=> item.hospitalId == hospitalId).toList();
     
     final headers = ['Kode Ruangan', 'Ruangan', 'Kelas'];
-    final data = room.map((hospital) {
+    final data = filteredRoom.map((item) {
       return [
-        hospital.roomId?.toString() ?? '-',
-        hospital.roomName?.toString() ?? '-',
-        hospital.roomClass?.toString() ?? '-',
+        item.roomId?.toString() ?? '-',
+        item.roomName?.toString() ?? '-',
+        item.roomClass?.toString() ?? '-',
       ];
     });
 

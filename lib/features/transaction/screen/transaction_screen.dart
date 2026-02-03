@@ -87,6 +87,7 @@ class _TransactionScreenState extends State<TransactionScreen> {
         appBar: AppBar(
           backgroundColor: Colors.white,
           elevation: 0,
+          scrolledUnderElevation: 0,
         ),
         body: Container(
           padding: EdgeInsets.symmetric(vertical: 10),
